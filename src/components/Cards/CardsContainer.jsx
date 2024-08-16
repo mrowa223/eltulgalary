@@ -5,7 +5,7 @@ import cardsData from "../../data/cardsData";
 
 const CardsContainer = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-4">
+    <div className="grid grid-cols-4 gap-4 justify-center">
       {cardsData.map((card, index) => (
         <ProfileCard
           key={index}
