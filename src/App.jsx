@@ -17,9 +17,7 @@ const lngs = {
   // rus: { nativeName: "Русский" },
 };
 
-
-
-// 
+//
 
 export default function App() {
   const { t, i18n } = useTranslation();
