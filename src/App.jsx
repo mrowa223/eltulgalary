@@ -45,6 +45,7 @@ export default function App() {
         <Route path="/" element={<p>Hi</p>} />
         <Route path="/galery" element={<CardsPage />} />
         <Route path="/card" element={<CardPage />} />
+        <Route path="/profile/:profileSlug" element={<Card />} />
         {/* Другие маршруты */}
       </Routes>
     </div>

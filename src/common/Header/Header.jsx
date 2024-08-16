@@ -18,9 +18,13 @@ const Header = () => {
     <header className="p-4 ">
       <div className="flex flex-col sm:flex-row items-center justify-around">
         {/* Логотип */}
-        <img src={kmg} alt="Logo" className="
+        <img
+          src={kmg}
+          alt="Logo"
+          className="
         header-img
-        w-24 h-auto sm:w-32" />
+        w-24 h-auto sm:w-32"
+        />
 
         {/* Навигация */}
         <nav className="mt-4 sm:mt-0">
@@ -46,8 +50,8 @@ const Header = () => {
               <div
                 className={`px-4 py-2 rounded-l-lg cursor-pointer ${
                   currentLanguage === "kz"
-                    // ? "bg-blue-500 text-white"
-                    // : "bg-gray-200"
+                  // ? "bg-blue-500 text-white"
+                  // : "bg-gray-200"
                 }`}
                 onClick={() => handleToggle("kz")}
               >
@@ -56,8 +60,8 @@ const Header = () => {
               <div
                 className={`px-4 py-2 rounded-r-lg cursor-pointer ${
                   currentLanguage === "rus"
-                    // ? "bg-blue-500 text-white"
-                    // : "bg-gray-200"
+                  // ? "bg-blue-500 text-white"
+                  // : "bg-gray-200"
                 }`}
                 onClick={() => handleToggle("rus")}
               >
@@ -68,9 +72,13 @@ const Header = () => {
         </nav>
 
         {/* Дополнительное изображение */}
-        <img src={logo} alt="Additional" className="
+        <img
+          src={logo}
+          alt="Additional"
+          className="
         header-img
-        w-24 h-auto sm:w-32 mt-4 sm:mt-0" />
+        w-24 h-auto sm:w-32 mt-4 sm:mt-0"
+        />
       </div>
     </header>
   );
