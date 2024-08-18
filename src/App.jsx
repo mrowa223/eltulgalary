@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 
-import Card from "./components/Card/Card";
+import ProfileCard from "./components/ProfileCard/ProfileCard";
 import Example from "./components/Example";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -41,10 +41,10 @@ export default function App() {
       </div>
 
       <Routes>
-        <Route path="/" element={<MainPage/ >} />
+        <Route path="/" element={<MainPage />} />
         <Route path="/galery" element={<CardsPage />} />
         <Route path="/card" element={<CardPage />} />
-        <Route path="/profile/:profileSlug" element={<Card />} />
+        <Route path="/profile/:profileSlug" element={<CardPage />} />
         {/* Другие маршруты */}
       </Routes>
     </div>

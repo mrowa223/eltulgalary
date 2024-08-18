@@ -1,11 +1,12 @@
-import React from 'react'
-import Card from '../components/Card/Card'
+import React from "react";
+// import Profile from "../components/ProfileCard/ProfileCard";
+import ProfileCard from "../components/ProfileCard/ProfileCard";
 const CardPage = () => {
   return (
     <div>
-        <Card/>
+      <ProfileCard />
     </div>
-  )
-}
+  );
+};
 
-export default CardPage
+export default CardPage;
