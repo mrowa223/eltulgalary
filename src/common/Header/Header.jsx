@@ -23,93 +23,95 @@ const Header = () => {
   };
 
   return (
-    <header className="p-4">
-      <div className="flex flex-col sm:flex-row items-center justify-between">
-        {/* Логотип */}
-        <Link to="/" className="header-img w-24 h-auto sm:w-32">
-          <img
-            src={kmg}
-            alt="Logo"
-            className="header-img w-24 h-auto sm:w-32"
-          />
-        </Link>
-        {/* Кнопка бургер-меню */}
-        <button className="block sm:hidden text-white" onClick={toggleMenu}>
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
+    <div className="header-container">
+      <header className="p-4">
+        <div className="flex flex-col sm:flex-row items-center justify-around">
+          {/* Логотип */}
+          <Link to="/" className="header-img w-24 h-auto sm:w-32">
+            <img
+              src={kmg}
+              alt="Logo"
+              className="header-img w-24 h-auto sm:w-32"
             />
-          </svg>
-        </button>
+          </Link>
+          {/* Кнопка бургер-меню */}
+          <button className="block sm:hidden text-white" onClick={toggleMenu}>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
 
-        {/* Навигация для больших экранов */}
-        <nav className={`sm:flex ${isMenuOpen ? "block" : "hidden"}`}>
-          <ul className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 items-center nav-list">
-            <li>
-              <Link to="/">
-                <Translation>
-                  {(t) => <p className="nav-item">{t("О НАС")}</p>}
-                </Translation>
-              </Link>
-            </li>
-            <li>
-              <Link to="/galery">
-                <Translation>
-                  {(t) => <p className="nav-item">{t("ГЕРОИ")}</p>}
-                </Translation>
-              </Link>
-            </li>
-            <li>
-              <Link to="/card">
-                <Translation>
-                  {(t) => <p className="nav-item">{t("ТЕМА")}</p>}
-                </Translation>
-              </Link>
-            </li>
+          {/* Навигация для больших экранов */}
+          <nav className={`sm:flex ${isMenuOpen ? "block" : "hidden"}`}>
+            <ul className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 items-center nav-list">
+              <li>
+                <Link to="/">
+                  <Translation>
+                    {(t) => <p className="nav-item">{t("О НАС")}</p>}
+                  </Translation>
+                </Link>
+              </li>
+              <li>
+                <Link to="/galery">
+                  <Translation>
+                    {(t) => <p className="nav-item">{t("ГЕРОИ")}</p>}
+                  </Translation>
+                </Link>
+              </li>
+              <li>
+                <Link to="/card">
+                  <Translation>
+                    {(t) => <p className="nav-item">{t("ТЕМА")}</p>}
+                  </Translation>
+                </Link>
+              </li>
 
-            {/* Тумблер для локализации */}
-            <div className="toggle-container">
-              <div className="toggle">
-                <div
-                  className={`toggle-item left ${
-                    isActive === "kz" ? "active" : ""
-                  }`}
-                  onClick={() => handleToggle("kz")}
-                >
-                  <span>KZ</span>
-                </div>
-                <div
-                  className={`toggle-item right ${
-                    isActive === "ru" ? "active" : ""
-                  }`}
-                  onClick={() => handleToggle("ru")}
-                >
-                  <span>RU</span>
+              {/* Тумблер для локализации */}
+              <div className="toggle-container">
+                <div className="toggle">
+                  <div
+                    className={`toggle-item left ${
+                      isActive === "kz" ? "active" : ""
+                    }`}
+                    onClick={() => handleToggle("kz")}
+                  >
+                    <span>KZ</span>
+                  </div>
+                  <div
+                    className={`toggle-item right ${
+                      isActive === "ru" ? "active" : ""
+                    }`}
+                    onClick={() => handleToggle("ru")}
+                  >
+                    <span>RU</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </ul>
-        </nav>
+            </ul>
+          </nav>
 
-        {/* Дополнительное изображение */}
-        <Link to="/" className="header-img w-24 h-auto sm:w-32">
-          <img
-            src={logo}
-            alt="Additional"
-            className="header-img w-24 h-auto sm:w-32 mt-4 sm:mt-0"
-          />
-        </Link>
-      </div>
-    </header>
+          {/* Дополнительное изображение */}
+          <Link to="/" className="header-img w-24 h-auto sm:w-32">
+            <img
+              src={logo}
+              alt="Additional"
+              className="header-img w-24 h-auto sm:w-32 mt-4 sm:mt-0"
+            />
+          </Link>
+        </div>
+      </header>
+    </div>
   );
 };
 

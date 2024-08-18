@@ -206,3 +206,11 @@
     transform: translate(-110%, -50%);
   }
 }
+
+@media (min-width: 993px) {
+  // Для ноутбуков и больших экранов
+
+  .background-container {
+    width: 100%;
+  }
+}
