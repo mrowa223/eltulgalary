@@ -98,7 +98,7 @@ h2 {
   font-size: 16px;
 }
 
-@media (min-width: 375px) and (max-width: 628px) {
+@media (min-width: 375px) and (max-width: 639px) {
   .img-item {
     margin: 0 auto;
 
@@ -117,13 +117,13 @@ h2 {
 
 @media (min-width: 640px) and (max-width: 768px) {
   .img-item {
-    width: 380px;
+    width: 450px;
     height: auto;
     background-color: #005286;
   }
 
   .content-section {
-    width: 390px;
+    width: 330px;
     height: 920px;
   }
 }

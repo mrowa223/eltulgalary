@@ -140,16 +140,16 @@
     }
   }
 
-  @media (min-width: 729px) and (max-width: 992px) {
-    // Для планшетов
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
+  // @media (min-width: 729px) and (max-width: 992px) {
+  //   // Для планшетов
+  //   justify-items: center;
+  //   grid-template-columns: repeat(3, 1fr);
 
-    .profile-circle {
-      width: 220px; // Устанавливаем максимальную ширину для планшетов
-      height: 220px; // Высота карточки
-    }
-  }
+  //   .profile-circle {
+  //     width: 220px; // Устанавливаем максимальную ширину для планшетов
+  //     height: 220px; // Высота карточки
+  //   }
+  // }
 
   @media (min-width: 993px) {
     // Для ноутбуков и больших экранов
