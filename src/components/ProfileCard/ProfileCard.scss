@@ -124,7 +124,8 @@ h2 {
 
   .content-section {
     width: 330px;
-    height: 920px;
+    // height: 920px;
+    height: auto;
   }
 }
 
@@ -137,7 +138,8 @@ h2 {
 
   .content-section {
     width: 542px;
-    height: 740px;
+  
+    font-size: 20px;
   }
 }
 
@@ -152,6 +154,6 @@ h2 {
 
   .content-section {
     width: 526px;
-    height: 740px;
+    height: auto;
   }
 }
