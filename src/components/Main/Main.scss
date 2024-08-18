@@ -1,0 +1,212 @@
+.background-container {
+  background-image: url("./images/oilImage.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.centered-text {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  padding-top: 178px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.main-title {
+  font-size: 114px;
+  font-family: "Federo", sans-serif;
+  letter-spacing: 1.12px;
+  margin: 0;
+}
+
+.main-text {
+  margin-left: 160px;
+  width: 220px;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+}
+
+.ellipse {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 141, 210, 0.5);
+  border-radius: 50%;
+  z-index: 0;
+  animation: rotateAndMove 10s linear infinite;
+}
+
+@keyframes rotateAndMove {
+  0% {
+    transform: translate(-180%, -50%) rotate(0deg);
+    left: 40%;
+  }
+  50% {
+    transform: translate(190%, -50%) rotate(180deg);
+    left: 40%;
+  }
+  100% {
+    transform: translate(-180%, -50%) rotate(360deg);
+    left: 40%;
+  }
+}
+
+
+
+@media (max-width: 320px) {
+  .centered-text {
+    font-size: 24px;
+    padding-top: 100px;
+  }
+
+  .main-title {
+    font-size: 64px;
+    letter-spacing: 0.8px;
+  }
+
+  .main-text {
+    margin-left: 60px;
+    width: auto;
+    font-size: 16px;
+  }
+
+  .ellipse {
+    width: 150px;
+    height: 150px;
+    transform: translate(-60%, -50%);
+  }
+}
+
+@media (max-width: 375px) {
+  .centered-text {
+    font-size: 28px;
+    padding-top: 120px;
+  }
+
+  .main-title {
+    font-size: 80px;
+    letter-spacing: 1px;
+  }
+
+  .main-text {
+    margin-left: 80px;
+    width: auto;
+    font-size: 18px;
+  }
+
+  .ellipse {
+    width: 180px;
+    height: 180px;
+    transform: translate(-70%, -50%);
+  }
+}
+
+@media (max-width: 425px) {
+  .centered-text {
+    font-size: 32px;
+    padding-top: 140px;
+  }
+
+  .main-title {
+    font-size: 92px;
+    letter-spacing: 1.02px;
+  }
+
+  .main-text {
+    margin-left: 100px;
+    width: auto;
+    font-size: 20px;
+  }
+
+  .ellipse {
+    width: 190px;
+    height: 190px;
+    transform: translate(-80%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .centered-text {
+    font-size: 36px;
+    padding-top: 160px;
+  }
+
+  .main-title {
+    font-size: 100px;
+    letter-spacing: 1.05px;
+  }
+
+  .main-text {
+    margin-left: 120px;
+    width: auto;
+    font-size: 22px;
+  }
+
+  .ellipse {
+    width: 200px;
+    height: 200px;
+    transform: translate(-90%, -50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .centered-text {
+    font-size: 40px;
+    padding-top: 170px;
+  }
+
+  .main-title {
+    font-size: 110px;
+    letter-spacing: 1.1px;
+  }
+
+  .main-text {
+    margin-left: 140px;
+    width: auto;
+    font-size: 24px;
+  }
+
+  .ellipse {
+    width: 220px;
+    height: 220px;
+    transform: translate(-100%, -50%);
+  }
+}
+
+@media (max-width: 1440px) {
+  .centered-text {
+    font-size: 44px;
+    padding-top: 180px;
+  }
+
+  .main-title {
+    font-size: 120px;
+    letter-spacing: 1.15px;
+  }
+
+  .main-text {
+    margin-left: 160px;
+    width: auto;
+    font-size: 26px;
+  }
+
+  .ellipse {
+    width: 240px;
+    height: 240px;
+    transform: translate(-110%, -50%);
+  }
+}

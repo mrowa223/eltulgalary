@@ -3,7 +3,7 @@ body {
   width: 1440px;
   height: 1024px;
   margin: 0 auto;
-  background-blend-mode: 50%;
+  background-blend-mode: 80%;
 }
 
 header {
@@ -76,7 +76,12 @@ header {
   background-color: rgb(0, 141, 210, 0.5);
   align-items: center;
   justify-content: center;
-  border-radius: 20%;
+  border-radius: 20px;
+}
+
+.nav-item {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 a {
@@ -85,4 +90,40 @@ a {
   border-radius: 20%;
   font-size: 24px;
   text-align: center;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px; /* Ширина тумблера */
+  background-color: #5ebcea; /* Цвет фона слева */
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.toggle-container .toggle {
+  display: flex;
+  width: 100%;
+}
+
+.toggle-item {
+  width: 50%; /* Каждая кнопка занимает половину ширины */
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #000; /* Цвет текста */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-item.right {
+  background-color: #5ebcea; /* Цвет фона слева */
+}
+
+.toggle-item.active {
+  // background-color: #0066cc;
+  background-color: #419fda; /* Цвет фона справа */
 }

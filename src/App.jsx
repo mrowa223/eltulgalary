@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import Header from "./common/Header/Header";
 import CardsPage from "./pages/CardsPage";
 import CardPage from "./pages/CardPage";
+import MainPage from "./pages/MainPage";
 
 const lngs = {
   // kz: { nativeName: "Казахский" },
@@ -40,7 +41,7 @@ export default function App() {
       </div>
 
       <Routes>
-        <Route path="/" element={<p>Hi</p>} />
+        <Route path="/" element={<MainPage/ >} />
         <Route path="/galery" element={<CardsPage />} />
         <Route path="/card" element={<CardPage />} />
         <Route path="/profile/:profileSlug" element={<Card />} />
