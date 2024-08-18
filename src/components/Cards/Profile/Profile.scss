@@ -73,55 +73,81 @@
 //       }
 //     }
 //   }
-  
-
 .profile-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    // background-color: #3E8AAA;
-    width: 200px;
-    height: 200px;
-    margin-left: 107px;
-    margin-top: 74px;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-  
-    .profile-circle {
-      background-color: #7A9ABF;
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-  
-    .profile-name {
-      color: #FFFFFF;
-      font-size: 1rem;
-      margin: 0;
-    }
-  
-    .profile-title {
-      color: #FFFFFF;
-      font-size: 0.75rem;
-      margin: 5px 0 10px 0;
-    }
-  
-    .profile-arrow {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      background-color: white;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.25rem;
-      color: #3E8AAA;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  // Ширина карточки адаптируется в зависимости от контейнера
+  max-width: 200px;  // Максимальная ширина карточки
+  height: auto;  // Высота адаптируется автоматически
+  padding: 16px;  // Внутренние отступы
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  // background-color: #3E8AAA;  // Цвет фона для наглядности
+
+  .profile-circle {
+    background-color: #7A9ABF;
+    width: 120px;  // Размер круга в карточке
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
   }
-  
+
+  .profile-name {
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .profile-title {
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    margin: 5px 0 10px 0;
+  }
+
+  .profile-arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    color: #3E8AAA;
+  }
+}
+
+.cards-container {
+  display: grid;
+  gap: 16px;  // Расстояние между карточками
+
+  @media (max-width: 576px) {
+    justify-items: center; // На самых маленьких экранах (мобильные телефоны)
+    grid-template-columns: repeat(1, 1fr);
+    padding: 16px;  // Отступы вокруг контейнера
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) { // На телефонах
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 16px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) { // На планшетах
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 16px;
+  }
+
+  @media (min-width: 992px) { // На ноутбуках
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 16px;
+  }
+}
