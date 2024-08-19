@@ -8,6 +8,24 @@
 
 import A_Nareshev from "./images/A_Nareshev.svg";
 import A_NareshevCircle from "./images/A_NareshevCircle.svg";
+import A_Berdibek from "./images/A_Berdibek.svg";
+import A_BerdibekCircle from "./images/A_BerdibekCircle.svg";
+import A_Erketanov from "./images/A_Erketanov.svg";
+import A_ErketanovCircle from "./images/A_ErketanovCircle.svg";
+import B_Elemesov from "./images/B_Elemesov.svg";
+import B_ElemesovCircle from "./images/B_ElemesovCircle.svg";
+import G_Ergaly from "./images/G_Ergaly.svg";
+import G_ErgalyCircle from "./images/G_ErgalyCircle.svg";
+
+// import M_Kupteylov from "./images/M_Kupteylov.svg";
+// import M_KupteylovCircle from "./images/M_KupteylovCircle.svg";
+
+// import M_Kilybayes from "./images/M_Kilybayev.svg";
+// import M_KilybayesCircle from "./images/M_KilybayevCircle.svg";
+
+import N_Bishimov from "./images/N_Bishimov.svg"
+import N_BishimovCircle from "./images/N_BishimovCircle.svg"
+
 
 // import A_Nareshev from "../assets/kmg.png"
 const cardsData = [
@@ -72,8 +90,8 @@ const cardsData = [
   // Калтаев Абай Ануарбекович
 
   {
-    image: A_Nareshev,
-    circleImage: A_NareshevCircle,
+    image: A_Erketanov,
+    circleImage: A_ErketanovCircle,
     name: "Askar Yerketanov",
     rusname: "А. ЕРКЕТАНОВ",
     workplace:
@@ -93,7 +111,8 @@ const cardsData = [
   },
 
   {
-    image: "B_Beshimov",
+    circleImage: N_BishimovCircle,
+    image: N_Bishimov,
     name: "Beshimov Nauryzgali",
     workplace: "зейнеткер",
     rusname: "Н. БЕШИМОВ",
@@ -111,7 +130,8 @@ const cardsData = [
     ],
   },
   {
-    image: "E_Elemessov",
+    image: B_Elemesov,
+    circleImage: B_ElemesovCircle,
     name: "Elemessov Beibit",
     workplace:
       "Ембімұнайгаз АҚ Доссормұнайгаз МГӨБ-ның №1 Ботахан мұнай және газ өндіру цехының бастығы",
@@ -130,7 +150,8 @@ const cardsData = [
     ],
   },
   {
-    image: "E_Ergali",
+    image: G_Ergaly,
+    circleImage: G_ErgalyCircle,
     name: "Ergali Gani",
     workplace:
       "Ембімұнайгаз АҚ Жылыоймұнайгаз МГӨБ-ның Құлсарыдағы мұнайды дайындап айдау цехының мұнай дайындап айдау Қаратон участогының 4 разряд тауар операторы ",
@@ -147,6 +168,8 @@ const cardsData = [
     ],
   },
   {
+    image: A_Berdibek,
+    circleImage: A_BerdibekCircle,
     image: "A_Adilov",
     name: "Adilov Berdibek",
     workplace:

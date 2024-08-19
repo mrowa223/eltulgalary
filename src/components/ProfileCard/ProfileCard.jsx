@@ -37,7 +37,7 @@ const ProfileCard = () => {
     <div className="flex justify-center items-center w-full h-screen">
     <div className="w-full h-full flex flex-col sm:flex-row bg-white rounded-lg overflow-hidden">
       {/* Image Section */}
-      <div className="relative w-full img-section h-full">
+      <div className="relative w-full img-section ">
         <img
           src={card.image}
           alt={card.name}
@@ -64,20 +64,20 @@ const ProfileCard = () => {
       <div className="w-full sm:w-1/2 h-full p-8 content-section flex flex-col">
         <Slider {...settings}>
           <div className="flex flex-col justify-center">
-            <h3 className="text-xl font-bold">Биография {card.name}</h3>
-            <p className="text-gray-800 mt-4">{card.description[0]}</p>
+            <h3 className="text-xl font-bold bio-title">Биография {card.name}</h3>
+            <p className="text-gray-800 mt-4 bio-text">{card.description[0]}</p>
           </div>
           <div className="flex flex-col h-full justify-center">
-            <h3 className="text-xl font-bold">Место Работы</h3>
-            <p className="text-gray-800 mt-4">{card.description[1]}</p>
+            <h3 className="text-xl font-bold bio-title ">Место Работы</h3>
+            <p className="text-gray-800 mt-4 bio-text">{card.description[1]}</p>
           </div>
           <div className="flex flex-col h-full justify-center">
-            <h3 className="text-xl font-bold">Another Slide Title</h3>
-            <p className="text-gray-800 mt-4">{card.description[2]}</p>
+            <h3 className="text-xl font-bold bio-title">Another Slide Title</h3>
+            <p className="text-gray-800 mt-4 bio-text">{card.description[2]}</p>
           </div>
           <div className="flex flex-col h-full justify-center">
-            <h3 className="text-xl font-bold">Citation</h3>
-            <p className="text-gray-800 mt-4">{card.description[3]}</p>
+            <h3 className="text-xl font-bold bio-title">Citation</h3>
+            <p className="text-gray-800 mt-4 bio-text">{card.description[3]}</p>
           </div>
         </Slider>
       </div>

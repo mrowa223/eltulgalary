@@ -54,7 +54,7 @@
 import React from "react";
 import "./Profile.scss"; // Подключение SCSS файла
 import { Link } from "react-router-dom";
-import Arrow from "./images/Arrow.png";
+import Arrow from "./images/Arrow.svg";
 
 const Profile = ({ image, name, title, description, circleImage }) => {
   const profileSlug = name.replace(/\s+/g, "-").toLowerCase(); // create a URL-friendly slug
@@ -71,7 +71,7 @@ const Profile = ({ image, name, title, description, circleImage }) => {
 
         <div className="profile-arrow">
           {/* <span>&#x27A4;</span> */}
-          <img src={Arrow} alt="" srcset="" />
+          <img src={Arrow} alt="" srcset="" className="arrow-img" />
         </div>
       </Link>
     </div>

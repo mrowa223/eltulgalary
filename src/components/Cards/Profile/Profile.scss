@@ -110,7 +110,7 @@
 
   .profile-arrow {
     position: absolute;
-    bottom: 10px;
+    bottom: 60px;
     right: 10px;
     background-color: white;
     width: 30px;
@@ -124,21 +124,39 @@
   }
 }
 
+.arrow-img {
+  width: 26px;
+}
+
 .cards-container {
   display: grid;
   gap: 16px; // Расстояние между карточками
   justify-items: center;
 
-  @media (max-width: 728px) {
+  @media (max-width: 726px) {
     // Для телефонов
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 
+    .cards-container {
+      width: 425px;
+    }
     .profile-circle {
-      width: 210px; // Устанавливаем максимальную ширину для маленьких экранов
-      height: 210px; // Высота карточки
+      width: 160px;
+      height: 160px;
     }
   }
+
+  // @media (max-width: 728px) {
+  //   // Для телефонов
+  //   grid-template-columns: repeat(2, 1fr);
+  //   justify-items: center;
+
+  //   .profile-circle {
+  //     width: 210px; // Устанавливаем максимальную ширину для маленьких экранов
+  //     height: 210px; // Высота карточки
+  //   }
+  // }
 
   // @media (min-width: 729px) and (max-width: 992px) {
   //   // Для планшетов
@@ -159,6 +177,27 @@
     .profile-circle {
       width: 240px; // Устанавливаем максимальную ширину для ноутбуков
       height: 240px; // Высота карточки
+    }
+  }
+
+  /* Адаптивный дизайн для экранов от 1280px до 1448px */
+  @media (min-width: 1280px) and (max-width: 1447px) {
+    .profile-arrow {
+      height: 60px;
+      width: 60px;
+      left: 190px;
+    }
+    /* Ваши стили для этого диапазона экранов */
+  }
+
+  /* Адаптивный дизайн для экранов от 1447px до 1536px */
+  @media (min-width: 1447px) and (max-width: 1536px) {
+    /* Ваши стили для этого диапазона экранов */
+
+    .profile-arrow {
+      height: 60px;
+      width: 60px;
+      left: 190px;
     }
   }
 }
