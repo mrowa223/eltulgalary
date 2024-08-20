@@ -126,6 +126,9 @@
 }
 
 @media (max-width: 375px) {
+  .background-container {
+    width: 100vh;
+  }
   .centered-text {
     font-size: 28px;
     padding-top: 120px;
@@ -150,6 +153,10 @@
 }
 
 @media (min-width: 376px) and (max-width: 425px) {
+  .background-container {
+    width: 100vh;
+  }
+
   .centered-text {
     font-size: 32px;
     padding-top: 140px;
@@ -174,6 +181,8 @@
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
+  
+  
   @keyframes rotateAndMove {
     0% {
       transform: translate(-180%, -50%) rotate(0deg); /* Адаптивное перемещение */
@@ -266,10 +275,9 @@
     font-size: 28px;
     color: whitesmoke;
   }
- 
 
   .background-container {
-    // overflow-x: hidden;
+    overflow-x: hidden;
     height: 83vh;
   }
   .centered-text {
