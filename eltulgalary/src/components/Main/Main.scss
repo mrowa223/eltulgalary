@@ -11,12 +11,12 @@
 }
 @keyframes changeBackground {
   0% {
-    background-image: url("./images/1.jpg");
+    background-image: url("./images/4.jpg");
     transform: scale(1.05); /* Небольшое приближение */
     opacity: 0.8; /* Затемнение */
   }
   20% {
-    background-image: url("./images/2.jpg");
+    background-image: url("./images/5.jpg");
     transform: scale(1.05);
     opacity: 0.8;
   }
@@ -26,12 +26,12 @@
     opacity: 0.8;
   }
   60% {
-    background-image: url("./images/4.jpg");
+    background-image: url("./images/7.jpg");
     transform: scale(1.05);
     opacity: 0.8;
   }
   80% {
-    background-image: url("./images/5.jpg");
+    background-image: url("./images/6.jpg");
     transform: scale(1.05);
     opacity: 0.8;
   }
