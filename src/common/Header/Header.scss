@@ -6,11 +6,14 @@ header {
 .logo {
 }
 .header-img {
+  width: 184px;
+  margin-top: 26px;
   /* По умолчанию для мобильных устройств */
   // height: auto; /* Чтобы сохранять пропорции изображения */
 
   @screen sm {
-    width: 120px; /* Для небольших экранов (планшеты) */
+    margin-top: -56px;
+    width: 160px;
   }
 
   @screen md {
@@ -33,8 +36,11 @@ header {
 
 .nav-list {
   @apply flex;
-
-  gap: 20px; /* По умолчанию для мобильных устройств */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
 
   @screen sm {
     gap: 40px; /* Для небольших экранов (планшеты) */
@@ -148,4 +154,16 @@ a {
   font-size: 18px;
   font-weight: bolder;
   color: #000;
+}
+
+@media (max-width: 375px) {
+  .nav-item {
+    width: 70px;
+  }
+}
+
+@media (max-width: 430px) {
+  .nav-item {
+    width: 70px;
+  }
 }

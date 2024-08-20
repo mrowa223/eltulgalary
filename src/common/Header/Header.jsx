@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <div className="header-container">
       <header className="p-4">
-        <div className="flex  items-center justify-around">
+        <div className="flex  items-center justify-between">
           {/* Логотип */}
           <Link to="/" className="header-img w-24 h-auto sm:w-32">
             <img
@@ -35,26 +35,10 @@ const Header = () => {
             />
           </Link>
           {/* Кнопка бургер-меню */}
-          <button className="block sm:hidden text-white" onClick={toggleMenu}>
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
 
           {/* Навигация для больших экранов */}
-          <nav className={`sm:flex ${isMenuOpen ? "block" : "hidden"}`}>
-            <ul className="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0 items-center nav-list">
+          <nav className={`sm:flex`}>
+            <ul className="flex flex-col  sm:space-x-4 space-y-2 sm:space-y-0 items-center nav-list">
               <li>
                 <Link to="/">
                   <Translation>
