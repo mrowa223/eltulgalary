@@ -60,7 +60,7 @@ const Profile = ({ image, name, title, description, circleImage }) => {
   const profileSlug = name.replace(/\s+/g, "-").toLowerCase(); // create a URL-friendly slug
 
   return (
-    <div className="profile-card">
+    <div className="profile-card dd">
       <Link to={`/profile/${profileSlug}`}>
         <div className="profile-circle">
           <img src={circleImage} alt="" srcset="" />

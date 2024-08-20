@@ -74,6 +74,11 @@
 //     }
 //   }
 
+.dd {
+  overflow-y: none;
+  overflow-x: none;
+}
+
 .profile-card {
   display: flex;
   flex-direction: column;
@@ -258,14 +263,12 @@
   .arrow-img {
     width: 40px;
   }
-  .profile-name{
-font-size: 40px !important; 
+  .profile-name {
+    font-size: 40px !important;
   }
 
-  .profile-title{
+  .profile-title {
     // width: px;
-font-size: 32px !important;
+    font-size: 32px !important;
   }
-
-  
 }
