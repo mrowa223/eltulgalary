@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Translation, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "./Header.scss";
 
 import logo from "./images/logo.svg";
@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <div className="header-container">
       <header className="p-4">
-        <div className="flex  items-center justify-between">
+        <div className="flex items-center justify-between">
           {/* Логотип */}
           <Link to="/" className="header-img w-24 h-auto sm:w-32">
             <img
@@ -35,29 +35,22 @@ const Header = () => {
             />
           </Link>
           {/* Кнопка бургер-меню */}
-
           {/* Навигация для больших экранов */}
           <nav className={`sm:flex`}>
-            <ul className="flex flex-col  sm:space-x-4 space-y-2 sm:space-y-0 items-center nav-list">
+            <ul className="flex flex-col sm:space-x-4 space-y-2 sm:space-y-0 items-center nav-list">
               <li>
                 <Link to="/">
-                  <Translation>
-                    {(t) => <p className="nav-item">{t("О НАС")}</p>}
-                  </Translation>
+                  <p className="nav-item">{i18n.t('header.aboutUs')}</p>
                 </Link>
               </li>
               <li>
                 <Link to="/galery">
-                  <Translation>
-                    {(t) => <p className="nav-item">{t("ГЕРОИ")}</p>}
-                  </Translation>
+                  <p className="nav-item">{i18n.t('header.gallery')}</p>
                 </Link>
               </li>
               <li>
                 <Link to="/card">
-                  <Translation>
-                    {(t) => <p className="nav-item">{t("ТЕМА")}</p>}
-                  </Translation>
+                  <p className="nav-item">{i18n.t('header.theme')}</p>
                 </Link>
               </li>
 

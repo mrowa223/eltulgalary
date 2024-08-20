@@ -1,0 +1,15 @@
+{
+    "profileCard": {
+      "title": "Profile Card",
+      "description1": "Biography",
+      "description2": "Workplace",
+      "description3": "Achievements",
+      "description4": "Quotes"
+    },
+    "header": {
+      "aboutUs": "About Us",
+      "gallery": "Gallery",
+      "theme": "Theme"
+    }
+  }
+  

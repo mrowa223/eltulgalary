@@ -1,0 +1,15 @@
+{
+    "profileCard": {
+      "title": "Карточка профиля",
+      "description1": "Биография",
+      "description2": "Место работы",
+      "description3": "Достижения",
+      "description4": "Цитаты"
+    },
+    "header": {
+      "aboutUs": "О нас",
+      "gallery": "Галерея",
+      "theme": "Тема"
+    }
+  }
+  
