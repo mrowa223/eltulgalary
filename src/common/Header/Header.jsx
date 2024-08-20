@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <div className="header-container">
       <header className="p-4">
-        <div className="flex flex-col sm:flex-row items-center justify-around">
+        <div className="flex  items-center justify-around">
           {/* Логотип */}
           <Link to="/" className="header-img w-24 h-auto sm:w-32">
             <img
@@ -106,7 +106,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Additional"
-              className="header-img w-24 h-auto sm:w-32 mt-4 sm:mt-0 logo"
+              className="header-img w-24 h-auto sm:w-32 mt-4 "
             />
           </Link>
         </div>

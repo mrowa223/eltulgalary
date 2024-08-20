@@ -159,9 +159,15 @@ html {
 @media (min-width: 376px) and (max-width: 425px) and (orientation: portrait) {
   .background-container {
     width: auto;
-    height: 80vh;
+    // height: 80vh;
     background-size: cover;
     background-position: center;
+    
+  }
+
+  html{
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .centered-text {
