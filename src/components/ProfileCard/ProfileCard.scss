@@ -18,8 +18,6 @@ p {
   width: 100%; /* Занимает всю доступную ширину */
   height: 1024px; /* Можно изменить по необходимости */
   margin: 0 auto;
-  // overflow-x; /* Избегаем горизонтальной прокрутки */
-  // overflow-y: hidden; /* Избегаем вертикальной прокрутки */
 }
 
 .content {
@@ -54,61 +52,81 @@ h2 {
   font-size: 16px;
 }
 
-/* Адаптивный дизайн для мобильных устройств от 375px до 639px */
+/* Адаптивный дизайн для мобильных устройств от 320px до 639px */
 @media (max-width: 639px) {
   .img-item {
-    width: 100%;
     max-width: 236px;
     height: 280px;
   }
 
   .content-section {
-    width: 100%;
     height: 260px;
   }
 
   .bio-title {
     font-size: 16px;
+  
   }
 
   .bio-text {
     font-size: 8px;
     line-height: 10px;
+   
   }
 }
 
 /* Адаптивный дизайн для планшетов от 640px до 768px */
 @media (min-width: 640px) and (max-width: 768px) {
   .img-item {
-    width: 100%;
     max-width: 450px;
   }
 
   .content-section {
-    width: 100%;
     max-width: 330px;
   }
 
   .bio-title {
     font-size: 18px;
+  
   }
 
   .bio-text {
     font-size: 14px;
     line-height: 18px;
+   
   }
 }
 
-/* Адаптивный дизайн для планшетов и небольших ноутбуков от 770px до 992px */
-@media (min-width: 770px) and (max-width: 992px) {
+/* Адаптивный дизайн для планшетов и небольших ноутбуков от 769px до 992px */
+@media (min-width: 769px) and (max-width: 992px) {
   .img-item {
-    width: 100%;
     max-width: 450px;
   }
 
   .content-section {
-    width: 100%;
     max-width: 390px;
+    font-size: 20px;
+  }
+
+  .bio-title {
+    font-size: 18px;
+    
+  }
+
+  .bio-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+/* Адаптивный дизайн для ноутбуков от 993px до 1023px */
+@media (min-width: 993px) and (max-width: 1023px) {
+  .img-item {
+    max-width: 520px;
+  }
+
+  .content-section {
+    max-width: 546px;
     font-size: 20px;
   }
 
@@ -122,3 +140,93 @@ h2 {
   }
 }
 
+/* Адаптивный дизайн для больших экранов от 1024px до 1440px */
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .img-item {
+    max-width: 72vh;
+  }
+
+  .content-section {
+    max-width: 83vh;
+    font-size: 20px;
+  }
+
+  .bio-title {
+    font-size: 18px;
+  }
+
+  .bio-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+
+/* Адаптивный дизайн для экранов от 1120px до 2000px */
+@media (min-width: 1441px) and (max-width: 1600px) {
+  .img-item {
+    max-width: 72vh; /* Изменяем, если необходимо для лучшего визуального отображения */
+  }
+
+  .content-section {
+    max-width: 83vh; /* Изменяем, если необходимо для лучшего визуального отображения */
+  }
+}
+
+/* Адаптивный дизайн для экранов от 1449px до 2000px */
+@media (min-width: 1449px) and (max-width: 1600px) {
+  .img-item {
+    max-width: 50vw; /* Устанавливаем максимальную ширину в процентном соотношении от ширины экрана */
+    height: auto;
+  }
+
+  .content-section {
+    max-width: 50vw; /* Устанавливаем максимальную ширину в процентном соотношении от ширины экрана */
+    padding: 16px; /* Отступы по вашему желанию */
+  }
+
+  /* Обеспечиваем выравнивание контента */
+  .flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: center; /* Выравнивание по горизонтали */
+  }
+
+  .w-full {
+    width: 100%; /* Обеспечиваем, что элементы занимают всю доступную ширину */
+  }
+
+  .h-full {
+    height: 100%; /* Обеспечиваем, что элементы занимают всю доступную высоту */
+  }
+}
+
+/* Адаптивный дизайн для экранов от 1600px до 2000px */
+@media (min-width: 1601px) and (max-width: 2000px) {
+  .img-item {
+    max-width: 50vw; /* Задаем ширину в процентном соотношении от ширины экрана */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+  }
+
+  .content-section {
+    max-width: 50vw; /* Задаем ширину в процентном соотношении от ширины экрана */
+    padding: 24px; /* Можно увеличить отступы, если нужно больше пространства */
+  }
+
+  /* Убедитесь, что элементы выравнены правильно */
+  .flex {
+    display: flex;
+    flex-direction: row; /* Устанавливаем горизонтальное направление */
+    align-items: center; /* Выравниваем по вертикали */
+    justify-content: center; /* Выравниваем по горизонтали */
+  }
+
+  .w-full {
+    width: 100%; /* Обеспечиваем, что элементы занимают всю доступную ширину */
+  }
+
+  .h-full {
+    height: 100%; /* Обеспечиваем, что элементы занимают всю доступную высоту */
+  }
+}
