@@ -133,65 +133,106 @@
   gap: 16px; // Расстояние между карточками
   justify-items: center;
 
+  @media (max-width: 425px) {
+    // Для телефонов
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+    .profile-card {
+      width: 0;
+    }
+    .cards-container {
+      width: 425px;
+    }
+    .profile-circle {
+      width: 140px;
+      height: 140px;
+    }
+
+    .profile-name {
+      margin-top: 18px;
+    }
+    .profile-arrow {
+      width: 30px;
+      height: 30px;
+      left: 30px;
+      top: 114px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .profile-arrow {
+      width: 50px;
+      height: 50px;
+      left: 150px;
+      margin: 20px 20px 0;
+    }
+  }
+
   @media (max-width: 726px) {
     // Для телефонов
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 
+    .profile-card {
+      width: 0;
+    }
     .cards-container {
       width: 425px;
     }
     .profile-circle {
-      width: 160px;
-      height: 160px;
+      width: 140px;
+      height: 140px;
+    }
+
+    .profile-name {
+      margin-top: 18px;
+    }
+    .profile-arrow {
+      width: 34px;
+      height: 34px;
+      left: 42px;
+      top: 120px;
     }
   }
 
-  // @media (max-width: 728px) {
-  //   // Для телефонов
-  //   grid-template-columns: repeat(2, 1fr);
-  //   justify-items: center;
-
-  //   .profile-circle {
-  //     width: 210px; // Устанавливаем максимальную ширину для маленьких экранов
-  //     height: 210px; // Высота карточки
-  //   }
-  // }
-
-  // @media (min-width: 729px) and (max-width: 992px) {
-  //   // Для планшетов
-  //   justify-items: center;
-  //   grid-template-columns: repeat(3, 1fr);
-
-  //   .profile-circle {
-  //     width: 220px; // Устанавливаем максимальную ширину для планшетов
-  //     height: 220px; // Высота карточки
-  //   }
-  // }
-
-  @media (min-width: 993px) {
+  @media (min-width: 993px) and (max-width: 1440px) {
     // Для ноутбуков и больших экранов
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
 
     .profile-circle {
-      width: 240px; // Устанавливаем максимальную ширину для ноутбуков
-      height: 240px; // Высота карточки
+      width: 220px; // Устанавливаем максимальную ширину для ноутбуков
+      height: 220px; // Высота карточки
+    }
+    .profile-arrow {
+      width: 50px;
+      height: 40px;
+      left: 150px;
+      margin: 30px 20px 0;
+    }
+    .arrow-img {
+      width: 40px;
     }
   }
 
   /* Адаптивный дизайн для экранов от 1280px до 1448px */
   @media (min-width: 1280px) and (max-width: 1447px) {
     .profile-arrow {
-      height: 60px;
-      width: 60px;
-      left: 190px;
+      width: 75px;
+      height: 70px;
+      left: 180px;
+      top: 276px;
+    }
+
+    .arrow-img {
+      width: 50px;
     }
     /* Ваши стили для этого диапазона экранов */
   }
 
   /* Адаптивный дизайн для экранов от 1447px до 1536px */
-  @media (min-width: 1447px) and (max-width: 1536px) {
+  @media (min-width: 1447px) and (max-width: 1876px) {
     /* Ваши стили для этого диапазона экранов */
 
     .profile-arrow {
@@ -200,4 +241,31 @@
       left: 190px;
     }
   }
+}
+
+@media (min-width: 1440px) {
+  .profile-circle {
+    width: 325px !important;
+    height: 325px !important;
+  }
+  .profile-arrow {
+    width: 50px;
+    height: 40px;
+    left: 150px;
+    margin: 30px 20px 0;
+  }
+
+  .arrow-img {
+    width: 40px;
+  }
+  .profile-name{
+font-size: 40px !important; 
+  }
+
+  .profile-title{
+    // width: px;
+font-size: 32px !important;
+  }
+
+  
 }
