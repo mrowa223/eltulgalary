@@ -111,7 +111,6 @@ html {
   border-radius: 50%;
   z-index: 0;
   animation: rotateAndMove 15s linear infinite;
-  
 }
 
 @keyframes rotateAndMove {
@@ -184,10 +183,10 @@ html {
     background-position: center;
   }
 
-  html {
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
+  // html {
+  //   overflow-y: hidden;
+  //   overflow-x: hidden;
+  // }
 
   .centered-text {
     font-size: 32px;
@@ -312,6 +311,7 @@ html {
 @media (min-width: 769px) and (max-width: 1023px) {
   .background-container {
     height: 80vh !important;
+    margin-top: -80px;
   }
   .centered-text {
     font-size: 40px;
