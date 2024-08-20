@@ -1,27 +1,64 @@
 .background-container {
-  background-image: url("./images/oilImage.png");
+  background-image: url("./images/1.jpg");
   background-size: cover;
   background-position: center;
-  height: 1200px;
+  height: 662px;
   display: flex;
   justify-content: center;
   text-align: center;
   position: relative;
-  animation: changeBackground 15s infinite;
+  animation: changeBackground 30s infinite;
+  transition: background-image 1s ease-in-out, filter 1s ease-in-out;
 }
 
 @keyframes changeBackground {
   0% {
-    background-image: url("./images/oilImage.png");
+    background-image: url("./images/2.jpg");
+    // transform: scale(1.05); /* Зум для 2-й картинки */
+    filter: brightness(0.8); /* Легкое затемнение */
+    opacity: 0.9; /* Легкое затемнение */
   }
-  40% {
-    background-image: url("./images/oilImage2.png");
+  14% {
+    background-image: url("./images/2.jpg");
+    // transform: scale(1.08); /* Дополнительный зум */
+    filter: brightness(0.9);
+    opacity: 1;
   }
-  80% {
-    background-image: url("./images/oilImage3.png");
+  28% {
+    background-image: url("./images/3.jpg");
+    // transform: scale(1.03); /* Зум для 3-й картинки */
+    filter: brightness(0.8);
+    opacity: 0.9;
+  }
+  42% {
+    background-image: url("./images/4.jpg");
+    // transform: scale(1.07); /* Зум для 4-й картинки */
+    filter: brightness(0.9);
+    opacity: 1;
+  }
+  56% {
+    background-image: url("./images/5.jpg");
+    // transform: scale(1.04); /* Зум для 5-й картинки */
+    filter: brightness(0.8);
+    opacity: 0.9;
+  }
+  70% {
+    background-image: url("./images/6.jpg");
+    // transform: scale(1.06); /* Зум для 6-й картинки */
+    filter: brightness(0.9);
+    opacity: 1;
+  }
+  84% {
+    background-image: url("./images/7.jpg");
+    // transform: scale(1.05); /* Зум для 7-й картинки */
+    filter: brightness(0.8);
+    opacity: 0.9;
   }
   100% {
-    background-image: url("./images/oilImage.png");
+    background-image: url("./images/1.jpg");
+    // transform: scale(1.07); /* Зум для 1-й картинки */
+    filter: brightness(0.9);
+    opacity: 1;
   }
 }
 
@@ -69,7 +106,7 @@
   background-color: rgba(0, 141, 210, 0.5);
   border-radius: 50%;
   z-index: 0;
-  animation: rotateAndMove 10s linear infinite;
+  animation: rotateAndMove 15s linear infinite;
 }
 
 @keyframes rotateAndMove {
@@ -111,7 +148,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (min-width: 376px) and (max-width: 425px) {
   .centered-text {
     font-size: 32px;
     padding-top: 140px;
@@ -135,7 +172,22 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
+  @keyframes rotateAndMove {
+    0% {
+      transform: translate(-180%, -50%) rotate(0deg); /* Адаптивное перемещение */
+      left: 20%;
+    }
+    50% {
+      transform: translate(200%, -50%) rotate(180deg); /* Адаптивное перемещение */
+      left: 20%;
+    }
+    100% {
+      transform: translate(-100%, -50%) rotate(360deg); /* Адаптивное перемещение */
+      left: 20%;
+    }
+  }
+
   .centered-text {
     font-size: 36px;
     padding-top: 160px;
@@ -147,19 +199,25 @@
   }
 
   .main-text {
-    margin-left: 120px;
+    margin: 0 auto;
     width: auto;
-    font-size: 22px;
+    font-size: 28px;
+    color: whitesmoke;
   }
 
   .ellipse {
     width: 200px;
     height: 200px;
+    top: 36%;
     transform: translate(-90%, -50%);
+  }
+
+  .background-container {
+    height: 656px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   .centered-text {
     font-size: 40px;
     padding-top: 170px;
@@ -179,11 +237,34 @@
   .ellipse {
     width: 220px;
     height: 220px;
-    transform: translate(-100%, -50%);
+    transform: translate(-100%, -65%);
   }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
+  @keyframes rotateAndMove {
+    0% {
+      transform: translate(-100%, -50%) rotate(0deg); /* Адаптивное перемещение */
+      left: 26%;
+    }
+    50% {
+      transform: translate(200%, -50%) rotate(180deg); /* Адаптивное перемещение */
+      left: 26%;
+    }
+    100% {
+      transform: translate(-130%, -50%) rotate(360deg); /* Адаптивное перемещение */
+      left: 26%;
+    }
+  }
+  .main-text {
+    margin: 0 auto;
+    width: auto;
+    font-size: 28px;
+    color: whitesmoke;
+  }
+  .background-container {
+    height: 588px;
+  }
   .centered-text {
     font-size: 44px;
     padding-top: 180px;
@@ -192,25 +273,147 @@
   .main-title {
     font-size: 120px;
     letter-spacing: 1.15px;
+    margin-bottom: 20px;
   }
 
   .main-text {
-    margin-left: 160px;
+    margin: 0 auto;
     width: auto;
-    font-size: 26px;
+    font-size: 36px;
+    color: whitesmoke;
   }
 
   .ellipse {
+    top: 45%;
     width: 240px;
     height: 240px;
     transform: translate(-110%, -50%);
   }
 }
 
-@media (min-width: 993px) {
-  // Для ноутбуков и больших экранов
+@media (min-width: 1280px) and (max-width: 1439px) {
+  @keyframes rotateAndMove {
+    0% {
+      transform: translate(-100%, -50%) rotate(0deg); /* Адаптивное перемещение */
+      left: 26%;
+    }
+    50% {
+      transform: translate(220%, -50%) rotate(180deg); /* Адаптивное перемещение */
+      left: 26%;
+    }
+    100% {
+      transform: translate(-130%, -50%) rotate(360deg); /* Адаптивное перемещение */
+      left: 26%;
+    }
+  }
+  .main-text {
+    margin: 0 auto;
+    width: auto;
+    font-size: 28px;
+    color: whitesmoke;
+  }
+  .background-container {
+    height: 620px;
+  }
+  .centered-text {
+    font-size: 44px;
+    padding-top: 180px;
+  }
+
+  .main-title {
+    font-size: 120px;
+    letter-spacing: 1.15px;
+    margin-bottom: 20px;
+  }
+
+  .main-text {
+    margin: 0 auto;
+    width: auto;
+    font-size: 36px;
+    color: whitesmoke;
+  }
+
+  .ellipse {
+    top: 45%;
+    width: 240px;
+    height: 240px;
+    transform: translate(-110%, -50%);
+  }
+}
+@media (min-width: 1440px) {
+  .centered-text {
+    font-size: 48px;
+    padding-top: 200px;
+  }
+
+  .main-title {
+    font-size: 130px;
+    letter-spacing: 1.2px;
+  }
+
+  .main-text {
+    margin: 0 auto;
+    width: auto;
+    font-size: 40px;
+    color: whitesmoke;
+  }
+
+  .ellipse {
+    width: 220px;
+    height: 220px;
+    top: 42%;
+    transform: translate(-120%, -50%);
+  }
 
   .background-container {
     width: 100%;
+    height: 720px
   }
 }
+
+/* Мобильные телефоны в портретной ориентации */
+@media (max-width: 320px) {
+  /* Стили для очень маленьких экранов */
+}
+
+/* Мобильные телефоны в портретной ориентации */
+@media (min-width: 321px) and (max-width: 375px) {
+  /* Стили для стандартных телефонов */
+}
+
+/* Мобильные телефоны и маленькие планшеты в портретной ориентации */
+@media (min-width: 376px) and (max-width: 600px) {
+  /* Стили для больших телефонов и маленьких планшетов */
+}
+
+/* Таблетки в портретной и ландшафтной ориентации */
+@media (min-width: 601px) and (max-width: 768px) {
+  /* Стили для стандартных планшетов */
+}
+
+/* Таблетки в ландшафтной ориентации и малые экраны ноутбуков */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Стили для малых ноутбуков и больших планшетов */
+}
+
+/* Ноутбуки и десктопы */
+@media (min-width: 1025px) {
+  /* Стили для ноутбуков и десктопов */
+}
+
+/* Большие экраны */
+@media (min-width: 1440px) {
+  /* Стили для очень больших экранов */
+}
+
+// 1. Мобильные телефоны:
+// Маленькие телефоны: 320px × 568px (например, iPhone SE, старые Android телефоны)
+// Стандартные телефоны: 375px × 667px (например, iPhone 7/8)
+// Большие телефоны: 414px × 896px (например, iPhone XR/11)
+// 2. Таблетки:
+// Маленькие планшеты: 600px × 1024px (например, 7-дюймовые планшеты, такие как Kindle Fire)
+// Стандартные планшеты: 768px × 1024px (например, iPad Mini, Samsung Galaxy Tab)
+// 3. Лэптопы и десктопы:
+// Средние экраны: 1024px × 768px (например, стандартные ноутбуки и небольшие экраны)
+// Большие экраны: 1280px × 800px (например, ноутбуки с более высокими разрешениями)
+// Очень большие экраны: 1440px × 900px и выше (например, мониторы с разрешением Full HD и более)
