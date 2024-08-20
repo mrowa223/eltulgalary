@@ -1,0 +1,541 @@
+// // body{
+// //   margin: 0 auto;
+// // }
+// // h3,
+// // p {
+// //   font-family: "Inter", sans-serif;
+// //   font-optical-sizing: auto;
+// // }
+
+// // p {
+// //   font-size: 24px;
+// // }
+// // .container {
+// //   width: 1440px;
+// //   height: 1024px;
+// // }
+
+// // .content {
+// //   height: 1024px;
+// // }
+
+// // .img-item {
+// //   width: 630px;
+// //   height: 670px;
+// //   background-color: #005286;
+// //   margin-top: -70px;
+// // }
+
+// // .content-section {
+// //   width: 920px;
+// //   background-color: rgb(41, 135, 182, 75%);
+// // }
+
+// // .img-section {
+// //   width: 33% !important;
+// // }
+
+// // h2{
+// //     font-size: 32px;
+// //     font-weight: bold;line-height: 100%;
+// // }
+
+// // .text{
+// //     font-size: 16px;
+// // }
+
+// body {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// h3,
+// p {
+//   font-family: "Inter", sans-serif;
+//   font-optical-sizing: auto;
+// }
+
+// p {
+//   font-size: 24px;
+// }
+
+// .container {
+//   width: 100%; /* Занимает всю доступную ширину */
+//   height: 1024px; /* Можно изменить по необходимости */
+//   margin: 0 auto;
+// }
+
+// .content {
+//   height: 1024px; /* Можно изменить по необходимости */
+// }
+
+// .img-item {
+//   width: 520px; /* Занимает всю доступную ширину */
+//   height: auto; /* Автоматическая высота для сохранения пропорций */
+//   background-color: #005286;
+//   // margin-top: -70px; /* При необходимости скорректируйте отступ */
+// }
+
+// .content-section {
+//   width: 936px; /* Занимает всю доступную ширину */
+//   background-color: rgba(41, 135, 182, 0.75);
+//   padding: 16px; /* Можно настроить отступы по вашему желанию */
+// }
+
+// .img-section {
+//   // width: 100%; /* Занимает всю доступную ширину */
+//   position: relative; /* Обеспечивает корректное позиционирование внутреннего содержимого */
+// }
+
+// h2 {
+//   font-size: 32px;
+//   font-weight: bold;
+//   line-height: 100%;
+// }
+
+// .text {
+//   font-size: 16px;
+// }
+// /* Адаптивный дизайн для мобильных устройств от 375px до 639px */
+// @media (min-width: 375px) and (max-width: 639px) {
+//   .img-item {
+//     margin: 0 auto;
+//     margin-top: 26px;
+//     width: 236px;
+//     height: 280px;
+//     background-color: #005286;
+//   }
+
+//   .title {
+//     height: 16px;
+//     font-weight: bold;
+//     text-align: center;
+//   }
+
+//   .text {
+//     text-align: center;
+//     margin-top: 10px;
+//     font-size: 12px;
+//     font-weight: bold;
+//     font-family: "Inter", sans-serif;
+//   }
+
+//   .content-section {
+//     width: 100%;
+//     height: 260px;
+//   }
+
+//   .bio-title {
+//     font-size: 16px;
+//   }
+
+//   .bio-text {
+//     font-size: 8px;
+//     line-height: 10px;
+//   }
+// }
+
+// /* Адаптивный дизайн для планшетов от 640px до 768px */
+// @media (min-width: 640px) and (max-width: 768px) {
+//   .bio-title {
+//     font-size: 18px;
+//   }
+
+//   .bio-text {
+//     font-size: 14px;
+//     line-height: 18px;
+//   }
+
+//   .img-item {
+//     width: 450px;
+//     height: auto;
+//     background-color: #005286;
+//   }
+
+//   .content-section {
+//     width: 330px;
+//     height: auto;
+//   }
+// }
+
+// /* Адаптивный дизайн для планшетов и небольших ноутбуков от 770px до 992px */
+// @media (min-width: 770px) and (max-width: 992px) {
+//   .bio-title {
+//     font-size: 18px;
+//   }
+
+//   .bio-text {
+//     font-size: 18px;
+//     line-height: 20px;
+//   }
+
+//   .img-item {
+//     width: 450px;
+//     height: auto;
+//     background-color: #005286;
+//   }
+
+//   .content-section {
+//     width: 390px;
+//     font-size: 20px;
+//   }
+// }
+
+// /* Адаптивный дизайн для ноутбуков и больших экранов от 993px до 1440px */
+// @media (min-width: 993px) and (max-width: 1440px) {
+//   .img-item {
+//     width: 500px;
+//     height: 580px;
+//     background-color: #005286;
+//   }
+
+//   .content-section {
+//     width: 526px;
+//     height: auto;
+//   }
+// }
+
+// /* Адаптивный дизайн для больших экранов от 1444px до 1600px */
+// @media (min-width: 1444px) and (max-width: 1600px) {
+//   .img-item {
+//     width: 520px;
+//     height: 580px;
+//     background-color: #005286;
+//   }
+
+//   .content-section {
+//     width: 921px;
+//     height: auto;
+//   }
+// }
+
+// /* Адаптивный дизайн для больших экранов от 1025px до 1110px */
+// @media (min-width: 1025px) and (max-width: 1110px) {
+//   .img-item {
+//     width: 580px;
+//     height: 600px;
+//     background-color: #005286;
+//   }
+
+//   .content-section {
+//     width: 530px;
+//     height: auto;
+//   }
+
+//   .title {
+//     font-size: 24px;
+//     text-align: center;
+//   }
+
+//   .text {
+//     margin-top: 15px;
+//     font-size: 14px;
+//     font-weight: bold;
+//     text-align: center;
+//   }
+
+//   .bio-title {
+//     margin-top: 80px;
+//     margin-left: 80px;
+//     font-size: 32px;
+//   }
+
+//   .bio-text {
+//     margin-left: 80px;
+//     font-size: 20px;
+//     line-height: 25px;
+//   }
+// }
+
+// /* Адаптивный дизайн для экранов от 1110px до 1280px */
+// @media (min-width: 1110px) and (max-width: 1280px) {
+//   .img-item {
+//     width: 550px;
+//     height: 600px;
+//     background-color: #005286;
+//   }
+
+//   .content-section {
+//     width: 800px;
+//     height: auto;
+//   }
+
+//   .title {
+//     font-size: 22px;
+//     text-align: center;
+//   }
+
+//   .text {
+//     margin-top: 15px;
+//     font-size: 14px;
+//     font-weight: bold;
+//     text-align: center;
+//   }
+
+//   .bio-title {
+//     font-size: 32px;
+//     margin-top: 80px;
+//     margin-left: 80px;
+//   }
+
+//   .bio-text {
+//     font-size: 24px;
+//     line-height: 30px;
+//     margin-left: 80px;
+//   }
+// }
+
+// /* Адаптивный дизайн для экранов от 1280px до 1448px */
+// @media (min-width: 1280px) and (max-width: 1447px) {
+//   .img-item {
+//     width: 580px;
+//     height: 600px;
+//     background-color: #005286;
+//   }
+
+//   .content-section {
+//     width: 868px;
+//     height: auto;
+//   }
+
+//   .title {
+//     margin-top: 32px;
+//     font-size: 32px;
+//     text-align: center;
+//   }
+
+//   .text {
+//     margin-top: 15px;
+//     font-size: 24px;
+//     font-weight: bold;
+//     text-align: center;
+//   }
+
+//   .bio-title {
+//     margin-left: 80px;
+//     margin-top: 80px;
+//     font-size: 36px;
+//   }
+
+//   .bio-text {
+//     font-size: 28px;
+//     line-height: 32px;
+//     margin-left: 80px;
+//   }
+// }
+
+// /* Адаптивный дизайн для экранов от 1280px до 1448px */
+// @media (min-width: 1447px) and (max-width: 1536px) {
+//   .bio-title {
+//     margin-left: 80px;
+//     margin-top: 80px;
+//     font-size: 36px;
+//   }
+
+//   .bio-text {
+//     font-size: 28px;
+//     line-height: 32px;
+//     margin-left: 80px;
+//   }
+
+//   .img-item {
+//     width: 526px;
+//     padding-top: 20px;
+//     height: 600px;
+//     background-color: #005286;
+//   }
+
+//   .content-section {
+//     width: 1012px;
+//     height: auto;
+//   }
+
+//   .title {
+//     font-size: 24px;
+//     text-align: center;
+//   }
+
+//   .text {
+//     margin-top: 15px;
+//     font-size: 14px;
+//     font-weight: bold;
+//     text-align: center;
+//   }
+
+//   .bio-title {
+//     font-size: 48px;
+//     line-height: 40px;
+//   }
+
+//   .bio-text {
+//     font-size: 32px;
+//     line-height: 40px;
+//   }
+// }
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3,
+p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+p {
+  font-size: 24px;
+}
+
+.container {
+  width: 100%; /* Занимает всю доступную ширину */
+  height: 1024px; /* Можно изменить по необходимости */
+  margin: 0 auto;
+}
+
+.content {
+  height: 1024px; /* Можно изменить по необходимости */
+}
+
+.img-item {
+  width: 520px; /* Занимает всю доступную ширину */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  background-color: #005286;
+}
+
+.content-section {
+  width: 936px; /* Занимает всю доступную ширину */
+  background-color: rgba(41, 135, 182, 0.75);
+  padding: 16px; /* Можно настроить отступы по вашему желанию */
+}
+
+.img-section {
+  position: relative; /* Обеспечивает корректное позиционирование внутреннего содержимого */
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 100%;
+}
+
+.text {
+  font-size: 16px;
+}
+
+
+
+/* Адаптивный дизайн для мобильных устройств от 375px до 639px */
+@media (min-width: 375px) and (max-width: 639px) {
+  .img-item {
+    width: 236px;
+    height: 280px;
+  }
+
+  .content-section {
+    width: 100%;
+    height: 260px;
+  }
+
+  .bio-title {
+    font-size: 24px;
+  }
+
+  .bio-text {
+    font-size: 12px;
+    line-height: 10px;
+  }
+}
+
+/* Адаптивный дизайн для планшетов от 640px до 768px */
+@media (min-width: 640px) and (max-width: 768px) {
+  .img-item {
+    width: 450px;
+  }
+
+  .content-section {
+    width: 330px;
+  }
+
+  .bio-title {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 32px;
+  }
+
+  .bio-text {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* Адаптивный дизайн для планшетов и небольших ноутбуков от 770px до 992px */
+@media (min-width: 770px) and (max-width: 992px) {
+  .img-item {
+    width: 450px;
+  }
+
+  .content-section {
+    width: 390px;
+    font-size: 20px;
+  }
+
+  .bio-title {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 32px;
+  }
+
+  .bio-text {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* Адаптивный дизайн для ноутбуков и больших экранов от 993px до 1440px */
+@media (min-width: 993px) and (max-width: 1445px) {
+  .img-item {
+    width: 500px;
+    height: 580px;
+    padding-left: 40px;
+  }
+
+  .content-section {
+    padding-left: 40px;
+    width: 940px;
+  }
+
+  .bio-title {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 32px;
+  }
+
+  .bio-text {
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* Адаптивный дизайн для больших экранов от 1444px до 1600px */
+@media (min-width: 1444px) and (max-width: 1600px) {
+  .img-item {
+    width: 520px;
+    height: 580px;
+  }
+
+  .content-section {
+    width: 921px;
+  }
+}
