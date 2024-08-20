@@ -159,7 +159,10 @@ html {
 @media (min-width: 376px) and (max-width: 425px) and (orientation: portrait) {
   .background-container {
     border: 2px solid red;
-    width: 100vh;
+    width: 47vh;
+    background-size: cover;
+    background-position: center;
+   
   }
 
   .centered-text {
@@ -168,19 +171,21 @@ html {
   }
 
   .main-title {
-    font-size: 92px;
+    margin: 0 auto;
+    font-size: 40px;
     letter-spacing: 1.02px;
   }
 
   .main-text {
-    margin-left: 100px;
+    margin: 0 auto;
     width: auto;
-    font-size: 20px;
+    font-size: 22px;
+    color: whitesmoke;
   }
 
   .ellipse {
-    width: 190px;
-    height: 190px;
+    width: 100px;
+    height: 100px;
     transform: translate(-80%, -50%);
   }
 }
