@@ -64,7 +64,7 @@ const ProfileCard = () => {
       <div className="w-full sm:w-1/2 h-full p-8 content-section flex flex-col">
         <Slider {...settings}>
           <div className="flex flex-col justify-center">
-            <h3 className="text-xl font-bold bio-title">Биография {card.name}</h3>
+            <h3 className="text-xl font-bold bio-title">Биография:</h3>
             <p className="text-gray-800 mt-4 bio-text">{card.description[0]}</p>
           </div>
           <div className="flex flex-col h-full justify-center">
@@ -72,11 +72,11 @@ const ProfileCard = () => {
             <p className="text-gray-800 mt-4 bio-text">{card.description[1]}</p>
           </div>
           <div className="flex flex-col h-full justify-center">
-            <h3 className="text-xl font-bold bio-title">Another Slide Title</h3>
+            <h3 className="text-xl font-bold bio-title">Достижения и награды</h3>
             <p className="text-gray-800 mt-4 bio-text">{card.description[2]}</p>
           </div>
           <div className="flex flex-col h-full justify-center">
-            <h3 className="text-xl font-bold bio-title">Citation</h3>
+            <h3 className="text-xl font-bold bio-title">Цитаты</h3>
             <p className="text-gray-800 mt-4 bio-text">{card.description[3]}</p>
           </div>
         </Slider>
