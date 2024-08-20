@@ -2,13 +2,14 @@
   background-image: url("./images/1.jpg");
   background-size: cover;
   background-position: center;
-  height: 662px;
+  height: 83vh;
   display: flex;
   justify-content: center;
   text-align: center;
   position: relative;
   animation: changeBackground 30s infinite;
   transition: background-image 1s ease-in-out, filter 1s ease-in-out;
+  // overflow: hidden;
 }
 
 @keyframes changeBackground {
@@ -213,11 +214,14 @@
   }
 
   .background-container {
-    height: 656px;
+    height: 83vh;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
+  .background-container {
+    height: 80vh !important;
+  }
   .centered-text {
     font-size: 40px;
     padding-top: 170px;
@@ -262,8 +266,11 @@
     font-size: 28px;
     color: whitesmoke;
   }
+ 
+
   .background-container {
-    height: 588px;
+    // overflow-x: hidden;
+    height: 83vh;
   }
   .centered-text {
     font-size: 44px;
@@ -292,6 +299,10 @@
 }
 
 @media (min-width: 1280px) and (max-width: 1439px) {
+  .background-container {
+    height: 83vh;
+  }
+
   @keyframes rotateAndMove {
     0% {
       transform: translate(-100%, -50%) rotate(0deg); /* Адаптивное перемещение */
@@ -313,7 +324,7 @@
     color: whitesmoke;
   }
   .background-container {
-    height: 656px;
+    height: 83vh;
   }
   .centered-text {
     font-size: 44px;
@@ -367,7 +378,7 @@
 
   .background-container {
     width: 100%;
-    height: 720px;
+    height: 83vh;
   }
 }
 
