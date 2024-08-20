@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: none;
 }
 
 h3,
@@ -19,6 +18,9 @@ p {
   width: 100%; /* Занимает всю доступную ширину */
   height: 1024px; /* Можно изменить по необходимости */
   margin: 0 auto;
+  overflow-x: none;
+  overflow-y: none;
+
 }
 
 .content {
