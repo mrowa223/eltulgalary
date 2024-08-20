@@ -10,59 +10,59 @@ html {
   justify-content: center;
   text-align: center;
   position: relative;
-  animation: changeBackground 30s infinite;
-  transition: background-image 1s ease-in-out, filter 1s ease-in-out;
-  // overflow: hidden;
+  animation: changeBackground 45s infinite ease-in-out;
+  animation-delay: -1s; /* Или другое подходящее значение */
+}
+
+.preload-images {
+  background-image: url("./images/1.jpg"), url("./images/2.jpg"),
+    url("./images/3.jpg"), url("./images/4.jpg"), url("./images/5.jpg");
+  display: none;
 }
 
 @keyframes changeBackground {
-  0% {
-    background-image: url("./images/2.jpg");
-    // transform: scale(1.05); /* Зум для 2-й картинки */
-    filter: brightness(0.8); /* Легкое затемнение */
-    opacity: 0.9; /* Легкое затемнение */
+  0%,
+  14%,
+  28%,
+  42%,
+  56%,
+  70%,
+  84%,
+  100% {
+    opacity: 0.8; /* Начальная точка - изображение скрыто */
   }
-  14% {
-    background-image: url("./images/2.jpg");
-    // transform: scale(1.08); /* Дополнительный зум */
-    filter: brightness(0.9);
-    opacity: 1;
+
+  2%,
+  16%,
+  30%,
+  44%,
+  58%,
+  72%,
+  86%,
+  100% {
+    opacity: 1; /* Изображение полностью видно */
   }
-  28% {
+
+  16% {
+    background-image: url("./images/2.jpg");
+  }
+  30% {
     background-image: url("./images/3.jpg");
-    // transform: scale(1.03); /* Зум для 3-й картинки */
-    filter: brightness(0.8);
-    opacity: 0.9;
   }
-  42% {
+  44% {
     background-image: url("./images/4.jpg");
-    // transform: scale(1.07); /* Зум для 4-й картинки */
-    filter: brightness(0.9);
-    opacity: 1;
   }
-  56% {
+  58% {
     background-image: url("./images/5.jpg");
-    // transform: scale(1.04); /* Зум для 5-й картинки */
-    filter: brightness(0.8);
-    opacity: 0.9;
   }
-  70% {
+  72% {
     background-image: url("./images/6.jpg");
-    // transform: scale(1.06); /* Зум для 6-й картинки */
-    filter: brightness(0.9);
-    opacity: 1;
   }
-  84% {
+  86% {
     background-image: url("./images/7.jpg");
-    // transform: scale(1.05); /* Зум для 7-й картинки */
-    filter: brightness(0.8);
-    opacity: 0.9;
   }
   100% {
-    background-image: url("./images/1.jpg");
-    // transform: scale(1.07); /* Зум для 1-й картинки */
-    filter: brightness(0.9);
-    opacity: 1;
+    background-image: url("./images/8.jpg");
   }
 }
 
@@ -111,6 +111,7 @@ html {
   border-radius: 50%;
   z-index: 0;
   animation: rotateAndMove 15s linear infinite;
+  
 }
 
 @keyframes rotateAndMove {
@@ -137,7 +138,7 @@ html {
   }
   .centered-text {
     font-size: 28px;
-    padding-top: 120px;
+    padding-top: 220px;
   }
 
   .main-title {
@@ -152,7 +153,7 @@ html {
   }
 
   .ellipse {
-    top: 148px;
+    top: 250px;
     width: 100px;
     height: 100px;
     transform: translate(-80%, -50%);
@@ -190,7 +191,7 @@ html {
 
   .centered-text {
     font-size: 32px;
-    padding-top: 140px;
+    padding-top: 300px;
   }
 
   .main-title {
@@ -209,11 +210,12 @@ html {
   .ellipse {
     width: 100px;
     height: 100px;
+    top: 326px;
     transform: translate(-80%, -50%);
   }
 }
 
-@media (min-width: 426px)  and (orientation: portrait) {
+@media (min-width: 426px) and (orientation: portrait) {
   @keyframes rotateAndMove {
     0% {
       transform: translate(-180%, -50%) rotate(0deg); /* Адаптивное перемещение */
@@ -231,7 +233,7 @@ html {
 
   .centered-text {
     font-size: 36px;
-    padding-top: 160px;
+    padding-top: 300px;
   }
 
   .main-title {
@@ -249,7 +251,7 @@ html {
   .ellipse {
     width: 100px;
     height: 100px;
-    top: 26%;
+    top: 340px;
   }
 
   .background-container {
@@ -277,11 +279,11 @@ html {
   header {
     background-color: #ffffff;
     height: 13vh;
-}
+  }
 
   .centered-text {
     font-size: 36px;
-    padding-top: 160px;
+    padding-top: 330px;
   }
 
   .main-title {
@@ -299,7 +301,7 @@ html {
   .ellipse {
     width: 100px;
     height: 100px;
-    top: 24%;
+    top: 370px;
   }
 
   .background-container {

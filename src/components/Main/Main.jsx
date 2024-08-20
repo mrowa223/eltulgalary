@@ -1,7 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Main.scss";
 
+const images = [
+  require("./images/1.jpg"),
+  require("./images/2.jpg"),
+  require("./images/3.jpg"),
+  require("./images/4.jpg"),
+  require("./images/5.jpg"),
+  require("./images/6.jpg"),
+  require("./images/7.jpg"),
+  require("./images/8.jpg"),
+];
+
 const Main = () => {
+  const [bgImage, setBgImage] = useState(images[0]);
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      index = (index + 1) % images.length;
+      setBgImage(images[index]);
+    }, 4500); // Задержка в 4.5 секунды (45 секунд / 8 изображений)
+
+    return () => clearInterval(interval); // Очистка интервала при размонтировании
+  }, []);
+
   useEffect(() => {
     const ellipse = document.querySelector(".ellipse");
     const letters = document.querySelectorAll(".main-title span");
@@ -36,7 +59,7 @@ const Main = () => {
   }, []); // Пустой массив зависимостей означает, что useEffect выполнится один раз после монтирования компонента
 
   return (
-    <div className="background-container">
+    <div className="background-container" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="ellipse"></div>
       <div className="centered-text">
         <h1 className="main-title">

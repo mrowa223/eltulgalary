@@ -90,7 +90,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Additional"
-              className="header-img w-24 h-auto sm:w-32 mt-4 "
+              className="header-img-logo w-24 h-auto sm:w-32 mt-4 "
             />
           </Link>
         </div>
