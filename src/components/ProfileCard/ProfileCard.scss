@@ -18,9 +18,8 @@ p {
   width: 100%; /* Занимает всю доступную ширину */
   height: 1024px; /* Можно изменить по необходимости */
   margin: 0 auto;
-  overflow-x: none;
-  overflow-y: none;
-
+  // overflow-x; /* Избегаем горизонтальной прокрутки */
+  // overflow-y: hidden; /* Избегаем вертикальной прокрутки */
 }
 
 .content {
@@ -28,13 +27,15 @@ p {
 }
 
 .img-item {
-  width: 520px; /* Занимает всю доступную ширину */
+  width: 100%; /* Занимает всю доступную ширину */
+  max-width: 520px; /* Максимальная ширина для сохранения пропорций */
   height: auto; /* Автоматическая высота для сохранения пропорций */
   background-color: #005286;
 }
 
 .content-section {
-  width: 936px; /* Занимает всю доступную ширину */
+  width: 100%; /* Занимает всю доступную ширину */
+  max-width: 936px; /* Максимальная ширина для сохранения пропорций */
   background-color: rgba(41, 135, 182, 0.75);
   padding: 16px; /* Можно настроить отступы по вашему желанию */
 }
@@ -54,9 +55,10 @@ h2 {
 }
 
 /* Адаптивный дизайн для мобильных устройств от 375px до 639px */
-@media (min-width: 375px) and (max-width: 639px) {
+@media (max-width: 639px) {
   .img-item {
-    width: 236px;
+    width: 100%;
+    max-width: 236px;
     height: 280px;
   }
 
@@ -78,11 +80,13 @@ h2 {
 /* Адаптивный дизайн для планшетов от 640px до 768px */
 @media (min-width: 640px) and (max-width: 768px) {
   .img-item {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
 
   .content-section {
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
   }
 
   .bio-title {
@@ -98,11 +102,13 @@ h2 {
 /* Адаптивный дизайн для планшетов и небольших ноутбуков от 770px до 992px */
 @media (min-width: 770px) and (max-width: 992px) {
   .img-item {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
   }
 
   .content-section {
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     font-size: 20px;
   }
 
@@ -116,26 +122,3 @@ h2 {
   }
 }
 
-/* Адаптивный дизайн для ноутбуков и больших экранов от 993px до 1440px */
-@media (min-width: 993px) and (max-width: 1440px) {
-  .img-item {
-    width: auto;
-    height: 640px;
-  }
-
-  .content-section {
-    width: 800px;
-  }
-}
-
-/* Адаптивный дизайн для больших экранов от 1444px до 1600px */
-@media (min-width: 1443px) and (max-width: 1600px) {
-  .img-item {
-    width: 520px;
-    height: 580px;
-  }
-
-  .content-section {
-    width: 921px;
-  }
-}

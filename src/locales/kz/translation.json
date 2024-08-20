@@ -1,15 +1,15 @@
 {
     "profileCard": {
-      "title": "Profile Card",
-      "description1": "Biography",
-      "description2": "Workplace",
-      "description3": "Achievements",
-      "description4": "Quotes"
+      "title": "Профиль картасы",
+      "description1": "Тарих",
+      "description2": "Жұмыс орны",
+      "description3": "Жетістіктер",
+      "description4": "Цитаталар"
     },
     "header": {
-      "aboutUs": "About Us",
-      "gallery": "Gallery",
-      "theme": "Theme"
+      "aboutUs": "Біз туралы",
+      "gallery": "Галерея",
+      "theme": "Сыртқы көрініс"
     }
   }
   
