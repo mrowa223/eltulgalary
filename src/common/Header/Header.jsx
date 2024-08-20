@@ -106,7 +106,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Additional"
-              className="header-img w-24 h-auto sm:w-32 mt-4 sm:mt-0"
+              className="header-img w-24 h-auto sm:w-32 mt-4 sm:mt-0 logo"
             />
           </Link>
         </div>
