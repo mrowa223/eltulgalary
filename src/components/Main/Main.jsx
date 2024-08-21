@@ -59,7 +59,10 @@ const Main = () => {
   }, []); // Пустой массив зависимостей означает, что useEffect выполнится один раз после монтирования компонента
 
   return (
-    <div className="background-container" style={{ backgroundImage: `url(${bgImage})` }}>
+    <div
+      className="background-container"
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
       <div className="ellipse"></div>
       <div className="centered-text">
         <h1 className="main-title">
@@ -67,7 +70,9 @@ const Main = () => {
             <span key={index}>{letter}</span>
           ))}
         </h1>
-        <p className="main-text">Because Saas Can’t Drive</p>
+        <p className="main-text">
+          «Қазақстан мұнайына 125 жыл: Мұра, Мақтаныш, Болашақ{" "}
+        </p>
       </div>
     </div>
   );

@@ -126,7 +126,7 @@ h2 {
   }
 
   .profile-card {
-    overflow-y: hidden;
+    // overflow-y: hidden;
   }
   .content-section {
     max-width: 390px;
@@ -293,14 +293,16 @@ h2 {
   }
 
   .bio-title {
-    font-size: 36px; /* Увеличение размера заголовка */
+    text-align: left;
+    font-size: 44px; /* Увеличение размера заголовка */
     margin-left: 40px; /* Увеличение отступа слева для более централизованного выравнивания */
     padding-top: 30px; /* Добавление отступа сверху */
   }
 
   .bio-text {
-    font-size: 22px; /* Увеличение размера текста */
-    line-height: 30px; /* Увеличение межстрочного интервала */
+    text-align: left;
+    font-size: 40px;
+    line-height: 38px;
     margin-left: 40px; /* Увеличение отступа слева */
     padding-top: 30px; /* Добавление отступа сверху */
   }
@@ -310,6 +312,8 @@ h2 {
   }
 
   .text {
-    font-size: 22px; /* Увеличение размера текста для улучшения читаемости */
+    // font-size: 22px; /* Увеличение размера текста для улучшения читаемости */
+    margin-top: 20px;
+    font-size: 22px;
   }
 }
