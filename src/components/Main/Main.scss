@@ -11,7 +11,7 @@ html {
   text-align: center;
   position: relative;
   animation: changeBackground 45s infinite ease-in-out;
-  animation-delay: -1s; /* Или другое подходящее значение */
+  animation-delay: 5s; /* Или другое подходящее значение */
 }
 
 .preload-images {
@@ -105,8 +105,8 @@ html {
   top: 22%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: rgba(0, 141, 210, 0.5);
   border-radius: 50%;
   z-index: 0;
@@ -288,6 +288,7 @@ html {
   .main-title {
     font-size: 56px;
     letter-spacing: 1.05px;
+    // margin-left: 200px !important;
   }
 
   .main-text {
@@ -343,7 +344,7 @@ html {
       left: 26%;
     }
     50% {
-      transform: translate(200%, -50%) rotate(180deg); /* Адаптивное перемещение */
+      transform: translate(250%, -50%) rotate(180deg); /* Адаптивное перемещение */
       left: 26%;
     }
     100% {
@@ -363,6 +364,8 @@ html {
     height: 83vh;
   }
   .centered-text {
+    margin-left: 112px;
+    top: 16%;
     font-size: 44px;
     padding-top: 180px;
   }
@@ -381,9 +384,9 @@ html {
   }
 
   .ellipse {
-    top: 24%;
-    width: 240px;
-    height: 240px;
+    top: 55%;
+    width: 140px;
+    height: 140px;
     transform: translate(-110%, -50%);
   }
 }
@@ -417,11 +420,13 @@ html {
     height: 83vh;
   }
   .centered-text {
+    top: 18% !important;
     font-size: 44px;
     padding-top: 180px;
   }
 
   .main-title {
+    margin-left: 166px;
     font-size: 120px;
     letter-spacing: 1.15px;
     margin-bottom: 20px;
@@ -435,19 +440,20 @@ html {
   }
 
   .ellipse {
-    top: 45%;
-    width: 240px;
-    height: 240px;
+    top: 57%;
+    width: 100px;
+    height: 100px;
     transform: translate(-110%, -50%);
   }
 }
 @media (min-width: 1440px) {
   .centered-text {
     font-size: 48px;
-    padding-top: 200px;
+    padding-top: 330px;
   }
 
   .main-title {
+    margin: 0 auto;
     font-size: 130px;
     letter-spacing: 1.2px;
   }
@@ -462,7 +468,7 @@ html {
   .ellipse {
     width: 220px;
     height: 220px;
-    top: 36%;
+    top: 59%;
 
     transform: translate(-120%, -50%);
   }
@@ -519,3 +525,39 @@ html {
 // Средние экраны: 1024px × 768px (например, стандартные ноутбуки и небольшие экраны)
 // Большие экраны: 1280px × 800px (например, ноутбуки с более высокими разрешениями)
 // Очень большие экраны: 1440px × 900px и выше (например, мониторы с разрешением Full HD и более)
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.maintenance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Заполняет всю высоту экрана */
+  background-color: #f8f9fa; /* Светлый фон */
+}
+
+.maintenance h1 {
+  font-size: 24px;
+  color: #333; /* Темно-серый цвет текста */
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  border: 2px solid #ccc; /* Легкая граница вокруг заголовка */
+  border-radius: 8px; /* Скругленные углы */
+  background-color: #fff; /* Белый фон для текста */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+@media (max-width: 600px) {
+  .maintenance h1 {
+    font-size: 18px; /* Меньший размер шрифта для маленьких экранов */
+    padding: 10px;
+  }
+}

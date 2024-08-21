@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 
 import ProfileCard from "./components/ProfileCard/ProfileCard";
-import Example from "./components/Example";
+import Example from "./pages/Example";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       {/* Переключение языков */}
       <div className="language-switcher">
         {Object.keys(lngs).map((lng) => (
@@ -42,10 +42,12 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/galery" element={<CardsPage />} />
+        {/* <Route path="/galery" element={<CardsPage />} />
         <Route path="/card" element={<CardPage />} />
+        <Route path="/example" element={<Example />} />
+       
         <Route path="/profile/:profileSlug" element={<CardPage />} />
-        {/* Другие маршруты */}
+        Другие маршруты */}
       </Routes>
     </div>
   );

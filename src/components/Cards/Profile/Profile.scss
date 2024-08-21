@@ -126,6 +126,8 @@
 }
 
 .cards-container {
+  margin-top: 40px;
+  padding-top: 40px;
   display: grid;
   gap: 16px; // Расстояние между карточками
   justify-items: center;

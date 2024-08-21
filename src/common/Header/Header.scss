@@ -1,182 +1,259 @@
-header {
+.header-container {
   background-color: #ffffff;
-  height: auto;
-  margin-bottom: 10px;
-  overflow-y: hidden;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-img, .header-img-logo {
+  transition: width 0.3s ease, transform 0.3s ease; /* Добавляем анимацию для логотипов */
+}
+
+.header-img {
+  width: 120px;
 }
 
 .header-img-logo {
-  width: 135px;
+  width: 120px;
 }
 
-.active {
-  border-radius: 12px;
-  background-color: #008dd2;
-}
-.header-img {
-  width: 184px;
-  // margin-top: 26px;
-
-  /* По умолчанию для мобильных устройств */
-  // height: auto; /* Чтобы сохранять пропорции изображения */
-
-  @screen sm {
-    // margin-top: -56px;
-    margin-top: auto;
-    width: 160px;
-  }
-
-  @screen md {
-    width: 140px; /* Для средних экранов (ноутбуки) */
-  }
-
-  @screen lg {
-    width: 160px; /* Для больших экранов (настольные ПК) */
-  }
-
-  @screen xl {
-    width: 180px;
-    margin-top: -8px; /* Для очень больших экранов */
-  }
-
-  @screen 2xl {
-    width: 200px; /* Для сверхшироких экранов */
-  }
+/* Анимация для элементов списка */
+.nav-list li {
+  margin: 0 var(--li-margin, 20px);
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Добавляем анимацию */
 }
 
+.nav-list li:hover {
+  transform: scale(1.05); /* Увеличиваем элемент при наведении */
+  background-color: #4a9ed1; /* Изменяем цвет фона при наведении */
+}
+
+/* Навигация */
 .nav-list {
-  @apply flex;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-around;
-
-  @screen sm {
-    gap: 40px; /* Для небольших экранов (планшеты) */
-  }
-
-  @screen md {
-    .nav-item {
-      width: 70px;
-      height: 50px;
-      font-size: 16px;
-    }
-
-    .toggle-container {
-      width: 100px;
-      height: 50px;
-      font-size: 16px;
-    }
-
-    gap: 0px; /* Для средних экранов (ноутбуки) */
-  }
-
-  @screen lg {
-    .toggle-container {
-      width: 140px;
-      height: 50px;
-      font-size: 16px;
-    }
-
-    .nav-item {
-      width: 100px;
-      height: 50px;
-      font-size: 16px;
-    }
-
-    gap: 20px; /* Для больших экранов (настольные ПК) */
-  }
-
-  @screen xl {
-    .toggle-container {
-      width: 140px;
-      height: 50px;
-      font-size: 18px;
-    }
-
-    .nav-item {
-      width: 140px;
-      height: 50px;
-      font-size: 18px;
-    }
-
-    gap: 20px; /* Для больших экранов (настольные ПК) */
-  }
-
-  @screen 2xl {
-    .toggle-container {
-      width: 200px;
-      height: 50px;
-      font-size: 20px;
-    }
-
-    .nav-item {
-      width: 220px;
-      height: 50px;
-      font-size: 20px;
-    }
-
-    gap: 20px; /* Для больших экранов (настольные ПК) */
-  }
+  flex-direction: row; /* Горизонтальное расположение элементов */
+  align-items: center; /* Выравнивание элементов по центру */
+  justify-content: center; /* Центрирование элементов */
+  gap: var(--nav-item-gap, 10px); /* Расстояние между элементами навигации с использованием переменной */
 }
 
 .nav-item {
-  display: flex;
-  width: 102px;
-  height: 50px;
-  background-color: rgb(0, 141, 210, 0.5);
-  align-items: center;
-  justify-content: center;
+  background-color: #5ebcea;
   border-radius: 20px;
-  font-size: 16px;
-  font-weight: bold;
+  padding: 10px;
+  font-size: 14px;
+  color: #000;
+  transition: font-size 0.3s ease, padding 0.3s ease;
+  white-space: nowrap; /* Не переносить текст на новую строку */
 }
 
-a {
-  color: black;
-  border-radius: 20%;
-  font-size: 24px;
-  text-align: center;
-}
-
+/* Элементы переключателя */
 .toggle-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 120px; /* Ширина тумблера */
-  background-color: #5ebcea; /* Цвет фона слева */
+  background-color: #5ebcea;
   border-radius: 10px;
-
   cursor: pointer;
+  width: auto; /* Автоматическая ширина для тумблера */
 }
 
-.toggle-container .toggle {
+.toggle {
   display: flex;
-  width: 100%;
+  flex-direction: row; /* Горизонтальное размещение элементов тумблера */
+  width: auto; /* Автоматическая ширина для тумблера */
 }
 
 .toggle-item {
-  width: 50%; /* Каждая кнопка занимает половину ширины */
+  flex: 1; /* Каждый элемент тумблера занимает равную ширину */
   padding: 10px;
   text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bolder;
   color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@media (min-width: 375px) {
-  .header {
-    height: 20vh;
+.toggle-item.left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.toggle-item.right {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.active {
+  background-color: #008dd2;
+  color: #fff;
+}
+
+/* Бургер-меню */
+.burger-menu {
+  display: none;
+}
+
+.burger-icon {
+  background-color: #000;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Мобильные экраны */
+@media (max-width: 375px) {
+  .header-img, .header-img-logo {
+    width: 80px;
   }
+
+  .nav-list {
+    gap: 5px; /* Меньшее расстояние между элементами на маленьких экранах */
+  }
+
   .nav-item {
-    width: 70px;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header-img:hover,
+  .header-img-logo:hover {
+    transform: scale(1.1); /* Увеличиваем логотипы при наведении */
+  }
+
+  .nav-list li:hover {
+    transform: scale(1.1); /* Увеличиваем элемент списка при наведении */
+    background-color: #4a9ed1; /* Изменяем цвет фона при наведении */
+  }
+
+  li {
+    margin: 0 10px; /* Уменьшенные отступы на маленьких экранах */
   }
 }
 
-@media (max-width: 430px) {
+@media (min-width: 376px) and (max-width: 430px) {
+  .header-img, .header-img-logo {
+    width: 90px;
+  }
+
+  .nav-list {
+    gap: 8px; /* Среднее расстояние между элементами */
+  }
+
   .nav-item {
-    width: 70px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .header-img:hover,
+  .header-img-logo:hover {
+    transform: scale(1.1); /* Увеличиваем логотипы при наведении */
+  }
+
+  .nav-list li:hover {
+    transform: scale(1.1); /* Увеличиваем элемент списка при наведении */
+    background-color: #4a9ed1; /* Изменяем цвет фона при наведении */
+  }
+
+  li {
+    margin: 0 15px; /* Средние отступы */
+  }
+}
+
+@media (min-width: 768px) {
+  .header-img, .header-img-logo {
+    width: 120px;
+  }
+
+  .nav-list {
+    gap: 10px; /* Стандартное расстояние между элементами */
+  }
+
+  .nav-item {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .header-img:hover,
+  .header-img-logo:hover {
+    transform: scale(1.1); /* Увеличиваем логотипы при наведении */
+  }
+
+  .nav-list li:hover {
+    transform: scale(1.1); /* Увеличиваем элемент списка при наведении */
+    background-color: #4a9ed1; /* Изменяем цвет фона при наведении */
+  }
+
+  li {
+    margin: 0 20px; /* Стандартные отступы */
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-img, .header-img-logo {
+    width: 135px;
+  }
+
+  .nav-list {
+    gap: 12px; /* Увеличенное расстояние между элементами */
+  }
+
+  .nav-item {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .header-img:hover,
+  .header-img-logo:hover {
+    transform: scale(1.1); /* Увеличиваем логотипы при наведении */
+  }
+
+  .nav-list li:hover {
+    transform: scale(1.1); /* Увеличиваем элемент списка при наведении */
+    background-color: #4a9ed1; /* Изменяем цвет фона при наведении */
+  }
+
+  li {
+    margin: 0 25px; /* Увеличенные отступы */
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-img, .header-img-logo {
+    width: 160px;
+  }
+
+  .nav-list {
+    gap: 15px; /* Еще большее расстояние между элементами */
+  }
+
+  .nav-item {
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  .header-img:hover,
+  .header-img-logo:hover {
+    transform: scale(1.1); /* Увеличиваем логотипы при наведении */
+  }
+
+  .nav-list li:hover {
+    transform: scale(1.1); /* Увеличиваем элемент списка при наведении */
+    background-color: #4a9ed1; /* Изменяем цвет фона при наведении */
+  }
+
+  li {
+    margin: 0 30px; /* Максимальные отступы */
   }
 }
