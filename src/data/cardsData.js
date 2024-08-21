@@ -1,85 +1,47 @@
-// import {
-//   A_Berdibek,
-//   A_BerdibekCircle,
-//   A_Erketanov,
-//   A_ErketanovCircle,
-//   A_Nareshev,
-//   A_NareshevCircle,
-//   Abai_Kaltaev,
-//   Abai_KaltaevCircle,
-//   B_Elemesov,
-//   B_ElemesovCircle,
-//   Daniyar_Usmanov,
-//   Daniyar_UsmanovCircle,
-//   G_Ergaly,
-//   G_ErgalyCircle,
-//   Irina_Sirichenko,
-//   Irina_SirichenkoCircle,
-//   M_Kilybayev,
-//   M_KilybayevCircle,
-//   M_KuptleyoudCircle,
-//   M_Kuptleyov,
-//   N_Bishimov,
-//   N_BishimovCircle,
-//   Nurlybek_Suyntaev,
-//   Nurlybek_SuyntaevCircle,
-//   S_Sagyndykova,
-//   S_SagyndykovaCircle,
-//   Uzak_Kemalov,
-//   Uzak_KemalovCircle,
-//   Bisaliev_Niyetkali_Bagitovich_Square,
-//   Bisaliev_Niyetkali_Bagitovich_Circle,
-//   Gabbasov_D_K_Square,
-//   Gabbasov_D_K_Circle,
-//   Denov_Erbol_Sisenbaevich_Square,
-//   Denov_Erbol_Sisenbaevich_Circle,
-//   Kamaliev_Khayretdin_Aytekovich_Square,
-//   Kamaliev_Khayretdin_Aytekovich_Circle,
-//   Kosherov_Sagatbek_Sakenovich_Circle,
-//   Kosherov_Sagatbek_Sakenovich_Square,
-//   Kulsugurov_Rustam_Nurlybaevich_Square,
-//   Kulsugurov_Rustam_Nurlybaevich_Circle,
-//   Muratbay_Algabek_Square,
-//   Muratbay_Algabek_Circle,
-//   Mustafaeva_Meruert_Kenzhebekovna_4_1_Square,
-//   Mustafaeva_Meruert_Kenzhebekovna_4_1_Circle,
-//   Mukhanov_Alibek_Bulatovich_Circle,
-//   Mukhanov_Alibek_Bulatovich_Square,
-//   Mukhametaly_Salauat_Kidyrbayuly_Square,
-//   Mukhametaly_Salauat_Kidyrbayuly_Circle,
-//   Tanganov_Daulet_Kazimuly_Square,
-//   Tanganov_Daulet_Kazimuly_Circle,
-// } from "./imagesData";
+// src/data/cardsData.js
 
-import { photos } from "./imagesData";
+// import A_Nareshev from "../components/ProfileCard/images/A_Nareshev.svg";
+// //  Убедитесь, что путь к изображению правильный
+// import A_NareshevCircle from "../components/ProfileCard/images/A_NareshevCircle.svg";
+// import E_Erketanov from "../components/ProfileCard/images/A_NareshevCircle.svg";
+// import B_Yelessov from "../components/ProfileCard/images/A_NareshevCircle.svg";
+
+import A_Nareshev from "./images/A_Nareshev.svg";
+import A_NareshevCircle from "./images/A_NareshevCircle.svg";
+import A_Berdibek from "./images/A_Berdibek.svg";
+import A_BerdibekCircle from "./images/A_BerdibekCircle.svg";
+import A_Erketanov from "./images/A_Erketanov.svg";
+import A_ErketanovCircle from "./images/A_ErketanovCircle.svg";
+import B_Elemesov from "./images/B_Elemesov.svg";
+import B_ElemesovCircle from "./images/B_ElemesovCircle.svg";
+import G_Ergaly from "./images/G_Ergaly.svg";
+import G_ErgalyCircle from "./images/G_ErgalyCircle.svg";
+import N_Bishimov from "./images/N_Bishimov.svg";
+import N_BishimovCircle from "./images/N_BishimovCircle.svg";
+import K_Kamaliev from "./images/Kamaliev_Khayretdin_Aytekovich_Square.svg";
+import K_KamalievCirlce from "./images/Kamaliev_Khayretdin_Aytekovich_Circle.svg";
+// import K_Kulsugurov from "./images/Kulsugurov_Rustam_Nurlybaevich_Square.svg";
+// import K_KulsugurovCircle from "./images/Kulsugurov_Rustam_Nurlybaevich_Circle.svg";
+// import M_Mukhametaly from './images/Mukhametaly_Salauat_Kidyrbayuly_Square.svg'
+// import M_MukhametalyCircle from './images/Mukhametaly_Salauat_Kidyrbayuly_Circle.svg'
+import T_Tanatov from './images/Tanganov_Daulet_Kazimuly_Square.svg'
+import T_TanatovCircle from './images/Tanganov_Daulet_Kazimuly_Circle.svg'
+import G_Gabbasov from './images/Gabbasov_D_K_Square.svg'
+import G_GabbasovCircle from './images/Gabbasov_D_K_Circle.svg'
+// import M_Kupteylov from "./images/M_Kupteylov.svg";
+// import M_KupteylovCircle from "./images/M_KupteylovCircle.svg";
+
+// import M_Kilybayes from "./images/M_Kilybayev.svg";
+// import M_KilybayesCircle from "./images/M_KilybayevCircle.svg";
+
+// import N_Bishimov from "./images/Bis.svg"
+// import N_BishimovCircle from "./images/N_BishimovCircle.svg"
 
 // import A_Nareshev from "../assets/kmg.png"
 const cardsData = [
   {
-    image: photos.A_Nareshev,
-    circleImage: photos.A_NareshevCircle,
-    name: "Anuar Nareshev",
-    rusname: "А. НАРЕШЕВ",
-    workplace:
-      "«Ембімұнайгаз» АҚ-ы «Жайықмұнайгаз» МГӨБ-сы өндірістік-техникалық бөлімінің бастығы",
-    title: "ATЫPAУ",
-    description: [
-      [
-        "Нарешев Ануар Асхарұлы Гурьев облысы Гурьев қаласында 1962 жылы дүниеге келген. 1979-1984 жылдары В.И.Ленин атындағы Казақ политехникалық институтының студенті. Еңбек жолын 1984 жылы «Жайықмұнайгаз» МГӨБ-да  мұнай өндіру операторлы болып бастаған. 1985 жылы «Жайықмұнайгаз» МГӨБ-сы Қамысты МГӨЦ-да шебер көмекшісі болып жалғастырған.1985-1988 жылдары «Жайықмұнайгаз» МГӨБ-сы мұнай дайындау және айдау цехының шебері. 1988-1992 жылдары өндірістік-техникалық бөлімінің, күрделі құрылыс бөлімінің, материалдық-техникалық қамту бөлімінің инженері жұмыстарын атқарған. 2009-2011 жылдары «Жайықмұнайгаз» МГӨБ-ның бас инженері лауазымын атқарған. 2011-2014 жылдары  өндірістік-техникалық қызметінің басшысы.2014 жылдың сәуірінен бүгінге дейін «Ембімұнайгаз» АҚ-ы «Жайықмұнайгаз» МГӨБ-ның өндірістік-техникалық бөлімі бастығы болып жұмыс жасап келеді.",
-      ],
-      [
-        "А.А.Нарешев білікті маман ретінде жаңа технологияларды енгізді, атап айтқанда 2012 жылы С.Балғымбаев кен орнында газды дайындау қондырғысын енгізуге,  2014 жылдары кен орындарынан газ аралас сұйығын тасымалдау үшін көпфазалы сораптар қондырғысын іске қосуға, Забурын кен орнында полимерлік суландыру қондырғысын орнатуға және Оңтүстік-Шығыс Қамысты, С.Балғымбаев, Забурын кен орындарында кен қабаты қысымы жүйесін ұстап тұру мақсатында ГНК сораптарын енгізуге үлес қосты.А.А.Нарешев 2009 жылы «ҚазМұнайГаз» БӨ» АҚ-ның алғыс хатымен, 2014 жылы «Ембімұнайгаз» АҚ-ның алғыс хатымен, 2021 жылы «ҚазМұнайГаз» ҰК» АҚ-ның құрмет грамотасымен, 2022 жылы «Ембімұнайгаз» АҚ-на 100-жыл» мерейтойлық медалімен, 2023 жылы ҚР ЭМ-нің «Мұнай-газ саласының еңбек сіңірген қызметкері» төс белгісімен марапатталған",
-      ],
-
-      [
-        "Жаңа техника мен озық технологияны енгізу – өндірісті дамытудың бөлінбейтін жолдарының бірі болып табылады.",
-      ],
-    ],
-  },
-
-  {
-    image: photos.A_Nareshev,
-    circleImage: photos.A_NareshevCircle,
+    image: A_Nareshev,
+    circleImage: A_NareshevCircle,
     name: "Anuar Nareshev",
     rusname: "А. НАРЕШЕВ",
     workplace:
@@ -138,8 +100,8 @@ const cardsData = [
   // Калтаев Абай Ануарбекович
 
   {
-    image: photos.A_Erketanov,
-    circleImage: photos.A_ErketanovCircle,
+    image: A_Erketanov,
+    circleImage: A_ErketanovCircle,
     name: "Askar Yerketanov",
     rusname: "А. ЕРКЕТАНОВ",
     workplace:
@@ -159,8 +121,8 @@ const cardsData = [
   },
 
   {
-    circleImage: photos.N_BishimovCircle,
-    image: photos.N_Bishimov,
+    circleImage: N_BishimovCircle,
+    image: N_Bishimov,
     name: "Beshimov Nauryzgali",
     workplace: "зейнеткер",
     rusname: "Н. БЕШИМОВ",
@@ -178,8 +140,8 @@ const cardsData = [
     ],
   },
   {
-    image: photos.B_Elemesov,
-    circleImage: photos.B_ElemesovCircle,
+    image: B_Elemesov,
+    circleImage: B_ElemesovCircle,
     name: "Elemessov Beibit",
     workplace:
       "Ембімұнайгаз АҚ Доссормұнайгаз МГӨБ-ның №1 Ботахан мұнай және газ өндіру цехының бастығы",
@@ -198,8 +160,8 @@ const cardsData = [
     ],
   },
   {
-    image: photos.G_Ergaly,
-    circleImage: photos.G_ErgalyCircle,
+    image: G_Ergaly,
+    circleImage: G_ErgalyCircle,
     name: "Ergali Gani",
     workplace:
       "Ембімұнайгаз АҚ Жылыоймұнайгаз МГӨБ-ның Құлсарыдағы мұнайды дайындап айдау цехының мұнай дайындап айдау Қаратон участогының 4 разряд тауар операторы ",
@@ -216,9 +178,8 @@ const cardsData = [
     ],
   },
   {
-    image: photos.A_Berdibek,
-    circleImage: photos.A_BerdibekCircle,
-    image: "A_Adilov",
+    image: A_Berdibek,
+    circleImage: A_BerdibekCircle,
     name: "Adilov Berdibek",
     workplace:
       "«Ембімұнайгаз» АҚ-ы «Жайықмұнайгаз» МГӨБ-сы мұнайды дайындау және айдау цехының 5 разрядты технологиялық қондырғылар операторы",
@@ -263,8 +224,8 @@ const cardsData = [
     ],
   },
   {
-    image: photos.Kamaliev_Khayretdin_Aytekovich_Square,
-    imageCircle: photos.Kamaliev_Khayretdin_Aytekovich_Circle,
+    image: K_Kamaliev,
+    circleImage: K_KamalievCirlce,
     name: "Kamaliyev Khayretdin",
     workplace: "«Қазақойл Ақтөбе»ЖШС зейнеткері ",
     rusname: "Х. КАМАЛИЕВ",
@@ -277,39 +238,41 @@ const cardsData = [
       ["3"],
     ],
   },
-  {
-    image: photos.Kulsugurov_Rustam_Nurlybaevich_Square,
-    imageCircle: photos.Kulsugurov_Rustam_Nurlybaevich_Circle,
-    name: "Kulsugurov Rustam",
-    workplace:
-      "«Қазақойл Ақтөбе» ЖШС Қожасай кен орнының мұнай және газ дайындау учаскесінің 6-разрядты технологиялық сорғыларының машинисі ",
-    rusname: "Р. КУЛСУГУРОВ",
-    title: "AKTOBE",
-    description: [
-      [
-        "26.05.1989 Ж. Ақтөбе облысы Шалқар кентінде дүниеге келген. Білімі: орта, Ақтөбе Мұнай және газ колледжі, техник-технолог. Жалпы жұмыс өтілі: 16 жыл, Саладағы жұмыс өтілі: 16 жыл, осы еңбек ұжымындағы жұмыс өтілі: 12 жыл. Еңбек жолын 2008-2009 жылдары «Геотехсервис» ЖШС-де ПРС операторы, 2009-2011 жылдары «Жана +» ЖШС-де ауыз сумен жабдықтау жөніндегі машинист, 2011 жылы «Oil Систем» ЖШС-де Завсклад, 2012 жылы «АНЭК» ЖШС-де Слесарь-жөндеуші лауазымдарында бастады, 2012 жылдан бастап «Қазақойл Ақтөбе» ЖШС Қожасай кен орнының мұнай және газ дайындау учаскесінің 4, 5, 6-разрядты технологиялық сорғылардың машинисі лауазымында жұмыс істеді. Жауапкершілік аймағына Қожасай кен орнының мұнай дайындау учаскесінің барлық сорғы агрегаттары кіреді, жан-жақты тұлға болып табылады, кәсіби негізде футболмен әуестенеді, 2024 жылы «Үздік маман» мамандығы бойынша үздік конкурсында бірінші орынды иеленді.  ",
-      ],
-      ["«Қазақойл Ақтөбе» ЖШС-де сенуге болатын қызметкерлер жұмыс істейді  "],
-      ["3"],
-    ],
-  },
-  {
-    image: "M_Mukhametaly",
-    name: "Mukhametaly Salauat",
-    workplace: "Пенсионер ТОО «Казахойл Актобе» ",
-    rusname: "С. МУХАМЕТАЛЫ",
+  // {
+  //   image: K_Kulsugurov,
+  //   circleImage: K_KulsugurovCircle,
+  //   name: "Kulsugurov Rustam",
+  //   workplace:
+  //     "«Қазақойл Ақтөбе» ЖШС Қожасай кен орнының мұнай және газ дайындау учаскесінің 6-разрядты технологиялық сорғыларының машинисі ",
+  //   rusname: "Р. КУЛСУГУРОВ",
+  //   title: "AKTOBE",
+  //   description: [
+  //     [
+  //       "26.05.1989 Ж. Ақтөбе облысы Шалқар кентінде дүниеге келген. Білімі: орта, Ақтөбе Мұнай және газ колледжі, техник-технолог. Жалпы жұмыс өтілі: 16 жыл, Саладағы жұмыс өтілі: 16 жыл, осы еңбек ұжымындағы жұмыс өтілі: 12 жыл. Еңбек жолын 2008-2009 жылдары «Геотехсервис» ЖШС-де ПРС операторы, 2009-2011 жылдары «Жана +» ЖШС-де ауыз сумен жабдықтау жөніндегі машинист, 2011 жылы «Oil Систем» ЖШС-де Завсклад, 2012 жылы «АНЭК» ЖШС-де Слесарь-жөндеуші лауазымдарында бастады, 2012 жылдан бастап «Қазақойл Ақтөбе» ЖШС Қожасай кен орнының мұнай және газ дайындау учаскесінің 4, 5, 6-разрядты технологиялық сорғылардың машинисі лауазымында жұмыс істеді. Жауапкершілік аймағына Қожасай кен орнының мұнай дайындау учаскесінің барлық сорғы агрегаттары кіреді, жан-жақты тұлға болып табылады, кәсіби негізде футболмен әуестенеді, 2024 жылы «Үздік маман» мамандығы бойынша үздік конкурсында бірінші орынды иеленді.  ",
+  //     ],
+  //     ["«Қазақойл Ақтөбе» ЖШС-де сенуге болатын қызметкерлер жұмыс істейді  "],
+  //     ["3"],
+  //   ],
+  // },
+  // {
+  //   image: M_Mukhametaly,
+  //   circleImage: M_MukhametalyCircle,
+  //   name: "Mukhametaly Salauat",
+  //   workplace: "Пенсионер ТОО «Казахойл Актобе» ",
+  //   rusname: "С. МУХАМЕТАЛЫ",
 
-    title: "AKTOBE",
-    description: [
-      [
-        "05.05.1954г., родился г. Актобе, Казахстан. Образование: высшее, Рязанский радиотехнический институт, факультет электроники. Общий стаж работы: 41 год, Стаж работы в отрасли: 30 лет, Стаж работы в данном трудовом коллективе: 16 лет. Начал свою трудовую деятельность с 1976г. на заводе «Актюбренген» в должности инженера отдела АСУП, 1978-1979гг. работал инженером, затем начальником ЭВМ в КВН в Облторгуправлении, 1979-1986г. работал в должности начальника отдела в ЦВЦ Актюбинской Облсельхозтехники, 1986-1994гг. завод Актюбинсксельмаш в должности начальника отдела АСУП, 1994-1999гг. Актюбинский университет «Дуние» в должности декана факультета, 2001-2017гг. в ТОО «Казахойл Актобе» в должности главного инженера по учету и хранению, ведущего инженера по го и ЧС, главного специалиста по ГО и ЧС отдела охраны труда и окружающей среды. ",
-      ],
-      ["2"],
-      ["3"],
-    ],
-  },
+  //   title: "AKTOBE",
+  //   description: [
+  //     [
+  //       "05.05.1954г., родился г. Актобе, Казахстан. Образование: высшее, Рязанский радиотехнический институт, факультет электроники. Общий стаж работы: 41 год, Стаж работы в отрасли: 30 лет, Стаж работы в данном трудовом коллективе: 16 лет. Начал свою трудовую деятельность с 1976г. на заводе «Актюбренген» в должности инженера отдела АСУП, 1978-1979гг. работал инженером, затем начальником ЭВМ в КВН в Облторгуправлении, 1979-1986г. работал в должности начальника отдела в ЦВЦ Актюбинской Облсельхозтехники, 1986-1994гг. завод Актюбинсксельмаш в должности начальника отдела АСУП, 1994-1999гг. Актюбинский университет «Дуние» в должности декана факультета, 2001-2017гг. в ТОО «Казахойл Актобе» в должности главного инженера по учету и хранению, ведущего инженера по го и ЧС, главного специалиста по ГО и ЧС отдела охраны труда и окружающей среды. ",
+  //     ],
+  //     ["2"],
+  //     ["3"],
+  //   ],
+  // },
   {
-    image: "T_Tanatov",
+    image: T_Tanatov,
+    circleImage: T_TanatovCircle,
     name: "Tanatov Daulet",
     workplace: "",
     rusname: "Д. ТАНАТОВ",
@@ -317,7 +280,8 @@ const cardsData = [
     description: [["1"], ["2"], ["3"]],
   },
   {
-    image: "G_Gabbasov",
+    image: G_Gabbasov,
+    circleImage:G_GabbasovCircle,
     name: "Gabbasov Daulet",
     workplace: "Мастер по добыче нефти и газа и конденсата ",
     rusname: "Д. ГАББАСОВ",
@@ -347,8 +311,7 @@ const cardsData = [
     ],
   },
   {
-    image: photos.Bisaliev_Niyetkali_Bagitovich_Square,
-    circleImage: photos.Bisaliev_Niyetkali_Bagitovich_Circle,
+    image: "B_Bisaliev",
     name: "Bisaliev Nietkali",
     rusname: "Н. БИСАЛИЕВ",
     workplace: "",
@@ -411,8 +374,7 @@ const cardsData = [
     ],
   },
   {
-    image: photos.Mukhanov_Alibek_Bulatovich_Square,
-    circleImage: photos.Mukhanov_Alibek_Bulatovich_Circle,
+    image: "M_Mukhanov",
     name: "Mukhanov Alibek",
     workplace: "",
     rusname: "А. МУХАНОВ",
@@ -426,8 +388,7 @@ const cardsData = [
     ],
   },
   {
-    image: photos.S_Sagyndykova,
-    circleImage: photos.S_SagyndykovaCircle,
+    image: "S_Sagyndykova",
     name: "Sagyndykova",
     rusname: "САГЫНДЫКОВА",
     workplace: "",
@@ -435,8 +396,7 @@ const cardsData = [
     description: [["1"], ["2"], ["3"]],
   },
   {
-    image: photos.Daniyar_Usmanov,
-    circleImage: photos.Daniyar_UsmanovCircle,
+    image: "U_Usmanov",
     name: "Usmanov Daniyar",
     workplace: "",
     rusname: "Д. УСМАНОВ",
@@ -450,8 +410,7 @@ const cardsData = [
     ],
   },
   {
-    image: photos.Uzak_Kemalov,
-    circleImage: photos.Uzak_KemalovCircle,
+    image: "K_Kemalov",
     name: "Kemalov Uzak",
     workplace: "",
     rusname: "У. КЕМАЛОВ",
@@ -465,8 +424,7 @@ const cardsData = [
     ],
   },
   {
-    image: photos.Irina_Sirichenko,
-    circleImage: photos.Irina_SirichenkoCircle,
+    image: "S_Sirichenko",
     name: "Sirichenko Irina",
     workplace: "",
     rusname: "И. СИРИЧЕНКО",
@@ -480,8 +438,7 @@ const cardsData = [
     ],
   },
   {
-    image: photos.Mustafaeva_Meruert_Kenzhebekovna_4_1_Square,
-    circleImage: photos.Mukhametaly_Salauat_Kidyrbayuly_Circle,
+    image: "M_Mustafaeva",
     name: "Mustafaeva Meruert",
     workplace: "",
     rusname: "М. МУСТАФАЕВА",
@@ -497,8 +454,7 @@ const cardsData = [
     ],
   },
   {
-    image: photos.Nurlybek_Suyntaev,
-    circleImage: photos.Nurlybek_SuyntaevCircle,
+    image: "S_Suyuntaev",
     name: "Suyuntaev Nurlybek",
     workplace: "",
     rusname: "Н. СУЮНТАЕВ",
@@ -512,8 +468,7 @@ const cardsData = [
     ],
   },
   {
-    image: photos.Abai_Kaltaev,
-    circleImage: photos.Abai_KaltaevCircle,
+    image: "K_Kaltaev",
     name: "Kaltaev Abai",
     workplace: "",
     rusname: "А. КАЛТАЕВ",

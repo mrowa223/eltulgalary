@@ -49,9 +49,9 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/card">
-                  <p className="nav-item">{i18n.t('header.theme')}</p>
-                </Link>
+                {/* <Link to="/card"> */}
+                  {/* <p className="nav-item">{i18n.t('header.theme')}</p> */}
+                {/* </Link> */}
               </li>
 
               {/* Тумблер для локализации */}
