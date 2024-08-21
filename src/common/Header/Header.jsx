@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div className="header-container">
-      <header className="p-4">
+      <header className="p-2">
         <div className="flex items-center justify-around g-10">
           {/* Логотип */}
           <Link to="/" className="header-img w-24 h-auto sm:w-32">

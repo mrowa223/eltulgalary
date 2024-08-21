@@ -74,20 +74,12 @@
 //     }
 //   }
 
-.dd {
-  overflow-y:scroll;
-  // overflow-x: ;
-}
-
 .profile-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px; // Ширина карточки адаптируется в зависимости от контейнера
-  max-width: 200px; // Максимальная ширина карточки
-  height: auto; // Высота адаптируется автоматически
-  padding: 16px; // Внутренние отступы
+
   border-radius: 10px;
   position: relative;
   text-align: center;
@@ -194,10 +186,10 @@
       margin-top: 18px;
     }
     .profile-arrow {
-      width: 34px;
-      height: 34px;
-      left: 42px;
-      top: 120px;
+      width: 28px;
+      height: 28px;
+      left: 36px;
+      top: 110px;
     }
   }
 
@@ -226,8 +218,8 @@
     .profile-arrow {
       width: 75px;
       height: 70px;
-      left: 180px;
-      top: 276px;
+      left: 244px;
+      top: 265px;
     }
 
     .arrow-img {
