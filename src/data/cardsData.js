@@ -16,16 +16,15 @@ import B_Elemesov from "./images/B_Elemesov.svg";
 import B_ElemesovCircle from "./images/B_ElemesovCircle.svg";
 import G_Ergaly from "./images/G_Ergaly.svg";
 import G_ErgalyCircle from "./images/G_ErgalyCircle.svg";
-import N_Bishimov from "./images/N_Bishimov.svg";
-import N_BishimovCircle from "./images/N_BishimovCircle.svg";
+
 import K_Kamaliev from "./images/Kamaliev_Khayretdin_Aytekovich_Square.svg";
 import K_KamalievCirlce from "./images/Kamaliev_Khayretdin_Aytekovich_Circle.svg";
 // import K_Kulsugurov from "./images/Kulsugurov_Rustam_Nurlybaevich_Square.svg";
 // import K_KulsugurovCircle from "./images/Kulsugurov_Rustam_Nurlybaevich_Circle.svg";
 // import M_Mukhametaly from './images/Mukhametaly_Salauat_Kidyrbayuly_Square.svg'
 // import M_MukhametalyCircle from './images/Mukhametaly_Salauat_Kidyrbayuly_Circle.svg'
-import T_Tanatov from './images/Tanganov_Daulet_Kazimuly_Square.svg'
-import T_TanatovCircle from './images/Tanganov_Daulet_Kazimuly_Circle.svg'
+// import T_Tanatov from './images/Tanganov_Daulet_Kazimuly_Square.svg'
+// import T_TanatovCircle from './images/Tanganov_Daulet_Kazimuly_Circle.svg'
 import G_Gabbasov from './images/Gabbasov_D_K_Square.svg'
 import G_GabbasovCircle from './images/Gabbasov_D_K_Circle.svg'
 // import M_Kupteylov from "./images/M_Kupteylov.svg";
@@ -121,8 +120,8 @@ const cardsData = [
   },
 
   {
-    circleImage: N_BishimovCircle,
-    image: N_Bishimov,
+    // circleImage: N_BishimovCircle,
+    image: 'N_Bishimov',
     name: "Beshimov Nauryzgali",
     workplace: "зейнеткер",
     rusname: "Н. БЕШИМОВ",
@@ -271,8 +270,8 @@ const cardsData = [
   //   ],
   // },
   {
-    image: T_Tanatov,
-    circleImage: T_TanatovCircle,
+    image: 'T_Tanatov',
+    circleImage: 'T_TanatovCircle',
     name: "Tanatov Daulet",
     workplace: "",
     rusname: "Д. ТАНАТОВ",
